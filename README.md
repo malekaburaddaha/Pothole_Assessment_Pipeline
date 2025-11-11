@@ -1,4 +1,3 @@
-```markdown
 # Pothole Detection and Assessment Project
 
 This repository contains a comprehensive implementation of pothole detection and severity assessment using hybrid computer vision and vision-language model (VLM) techniques.
