@@ -1,9 +1,16 @@
+"""
+Test VLM Inference - Gemini API
+Tests depth classification on 12 sample scenes
+"""
 import json
 from pathlib import Path
 from tqdm import tqdm
 import logging
 from datetime import datetime
-import os
+# Import Gemini functions
+from gemini_inference import call_gemini_api, should_use_dual_image
+# For GPT 
+from gpt5_inference import call_gpt5_api 
 
 # Import config
 from test_config import (
@@ -11,13 +18,8 @@ from test_config import (
     IMAGE_BATCHES_DIR,
     OUTPUT_DIR,
     TEST_MODELS,
-    LOG_FILE,
-    MIN_CROP_SIZE_PX,
-    DUAL_IMAGE_DISTANCE_CATEGORIES
+    LOG_FILE
 )
-
-# (Imports for your VLM inference function, for example:)
-from vlm_inference import should_use_dual_image, infer_depth_with_retry  # adjust import if needed
 
 logging.basicConfig(
     level=logging.INFO,
@@ -25,6 +27,7 @@ logging.basicConfig(
     handlers=[logging.FileHandler(LOG_FILE), logging.StreamHandler()]
 )
 logger = logging.getLogger(__name__)
+
 
 def test_model(model_name: str):
     logger.info(f"\n{'='*60}")
@@ -51,6 +54,7 @@ def test_model(model_name: str):
             with open(summary_path) as f:
                 summary_data = json.load(f)
             full_image_path = IMAGE_BATCHES_DIR / scene_id / f"{scene_id}.JPG"
+            
             for result in summary_data.get('results', []):
                 bbox_id = result.get('bbox_id', result.get('id', 0))
                 pothole_id = f"{scene_id}_bbox{bbox_id}"
@@ -60,27 +64,40 @@ def test_model(model_name: str):
                     logger.warning(f"Crop image not found: {crop_path}")
                     failed_potholes.append({'id': pothole_id, 'reason': 'crop_not_found'})
                     continue
+                
                 # Gather required info for inference
                 metrics = result.get('mask_metrics', {})
                 positional_features = result.get('Positional_feature', {})
                 bbox = result.get('gt_bbox', [0, 0, 0, 0])
                 distance_category = positional_features.get('Distance_Category', 'Unknown')
                 use_dual = should_use_dual_image(bbox, distance_category)
+                
                 if use_dual:
                     dual_image_count += 1
                 else:
                     single_image_count += 1
+                
                 try:
-                    # --- Replace with your inference function ---
-                    depth_result = infer_depth_with_retry(
-                        str(crop_path),
-                        str(full_image_path) if full_image_path.exists() else None,
-                        metrics,
-                        positional_features,
-                        bbox,
-                        distance_category
-                    )
-                    # --------------------------------------------
+                    # Route to correct API based on model name
+                    if 'gpt' in model_name.lower():
+                        depth_result = call_gpt5_api(
+                            str(crop_path),
+                            str(full_image_path) if full_image_path.exists() else None,
+                            metrics,
+                            positional_features,
+                            use_dual
+                        )
+                    else:
+                        # ✓ CHANGED: Now uses Gemini API
+                        depth_result = call_gemini_api(
+                            str(crop_path),
+                            str(full_image_path) if full_image_path.exists() else None,
+                            metrics,
+                            positional_features,
+                            use_dual,
+                            model_name=model_name
+                        )
+                    
                     results[pothole_id] = {
                         'model': model_name,
                         'scene': scene_id,
@@ -92,32 +109,41 @@ def test_model(model_name: str):
                         'timestamp': datetime.now().isoformat()
                     }
                     processed_potholes += 1
+                    
                 except Exception as e:
                     logger.error(f"Failed to process {pothole_id}: {e}")
                     failed_potholes.append({'id': pothole_id, 'reason': str(e)})
+                
                 total_potholes += 1
+                
         except Exception as e:
             logger.error(f"Failed to process scene {scene_id}: {e}")
 
     # Save results
-    model_name_safe = model_name.replace(':', '_')
+    model_name_safe = model_name.replace(':', '_').replace('.', '_')
     output_file = OUTPUT_DIR / f"{model_name_safe}_predictions.json"
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
+    
     logger.info(f"\n{'='*60}\nTEST COMPLETE: {model_name}")
     logger.info(f"Processed: {processed_potholes}/{total_potholes} potholes")
     logger.info(f"Failed: {len(failed_potholes)}")
     logger.info(f"Dual-image: {dual_image_count}, single-image: {single_image_count}")
     logger.info(f"Results: {output_file}\n{'='*60}\n")
+    
     return results
+
 
 def main():
     logger.info("="*60)
-    logger.info("STARTING VLM TEST PIPELINE (NEW STRUCTURE)")
+    logger.info("STARTING VLM TEST PIPELINE")
     logger.info("="*60)
+    
     for model in TEST_MODELS:
         test_model(model)
-    logger.info("Test pipeline complete.")
+    
+    logger.info("\nTest pipeline complete.")
+
 
 if __name__ == "__main__":
     main()

@@ -1,4 +1,6 @@
 """
+NOT USED FOR NOW 11.12.2025
+
 Configuration for Pothole Assessment VLM Pipeline
 """
 import os
