@@ -16,10 +16,11 @@ def analyze_human_annotations():
     """
     
     # Load annotated Excel file
-    df = pd.read_excel(OUTPUT_DIR / 'human_annotation_template.xlsx', sheet_name='Annotations')
-    
+    df = pd.read_excel(OUTPUT_DIR / 'human_annotation_template.xlsx', sheet_name='Annotations')    
+
     # Remove rows with missing annotations
     df = df.dropna(subset=['Annotator_1_Depth', 'Annotator_2_Depth'])
+    
     
     # Check if we have 3rd annotator
     has_annotator_3 = df['Annotator_3_Depth'].notna().any()
@@ -44,10 +45,11 @@ def analyze_human_annotations():
     
     h1_h2_kappa = cohen_kappa_score(human1, human2)
     h1_h2_agreement = accuracy_score(human1, human2)
-    
+
     print(f"\nAnnotator 1 vs Annotator 2:")
     print(f"  Cohen's Kappa: {h1_h2_kappa:.3f}")
     print(f"  Agreement: {h1_h2_agreement*100:.1f}%")
+
     
     if has_annotator_3:
         human3 = df['Annotator_3_Depth'].str.lower().values
