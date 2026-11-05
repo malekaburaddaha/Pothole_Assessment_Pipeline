@@ -1,0 +1,382 @@
+{
+ "panel1": {
+  "n_items": 42,
+  "unanimous": 21,
+  "majority": 17,
+  "three_way_split": 4,
+  "n_consensus": 38,
+  "pairwise_kappa": {
+   "R1_vs_R2": 0.4948,
+   "R1_vs_R3": 0.471,
+   "R2_vs_R3": 0.3944
+  },
+  "mean_pairwise_kappa": 0.4534,
+  "pairwise_agreement_pct": {
+   "R1_vs_R2": 66.7,
+   "R1_vs_R3": 64.3,
+   "R2_vs_R3": 59.5
+  }
+ },
+ "panel1_models": {
+  "gemini_2_5_pro_validation_run": {
+   "n": 38,
+   "kappa": 0.4795,
+   "kappa_ci95": [
+    0.262,
+    0.681
+   ],
+   "weighted_kappa": 0.5412,
+   "weighted_kappa_ci95": [
+    0.273,
+    0.77
+   ],
+   "agreement_pct": 65.8,
+   "confusion_rows_consensus": [
+    [
+     13,
+     0,
+     0
+    ],
+    [
+     4,
+     8,
+     3
+    ],
+    [
+     3,
+     3,
+     4
+    ]
+   ],
+   "per_class": {
+    "low": {
+     "precision": 0.65,
+     "recall": 1.0
+    },
+    "medium": {
+     "precision": 0.727,
+     "recall": 0.533
+    },
+    "high": {
+     "precision": 0.571,
+     "recall": 0.4
+    }
+   }
+  },
+  "gemini_2_5_flash_validation_run": {
+   "n": 38,
+   "kappa": 0.2237,
+   "kappa_ci95": [
+    -0.013,
+    0.449
+   ],
+   "weighted_kappa": 0.3153,
+   "weighted_kappa_ci95": [
+    0.007,
+    0.574
+   ],
+   "agreement_pct": 50.0,
+   "confusion_rows_consensus": [
+    [
+     9,
+     3,
+     1
+    ],
+    [
+     2,
+     9,
+     4
+    ],
+    [
+     2,
+     7,
+     1
+    ]
+   ],
+   "per_class": {
+    "low": {
+     "precision": 0.692,
+     "recall": 0.692
+    },
+    "medium": {
+     "precision": 0.474,
+     "recall": 0.6
+    },
+    "high": {
+     "precision": 0.167,
+     "recall": 0.1
+    }
+   }
+  },
+  "gpt5_validation_run": {
+   "n": 38,
+   "kappa": 0.2286,
+   "kappa_ci95": [
+    0.085,
+    0.41
+   ],
+   "weighted_kappa": 0.0632,
+   "weighted_kappa_ci95": [
+    -0.019,
+    0.215
+   ],
+   "agreement_pct": 50.0,
+   "confusion_rows_consensus": [
+    [
+     13,
+     0,
+     0
+    ],
+    [
+     9,
+     6,
+     0
+    ],
+    [
+     9,
+     1,
+     0
+    ]
+   ],
+   "per_class": {
+    "low": {
+     "precision": 0.419,
+     "recall": 1.0
+    },
+    "medium": {
+     "precision": 0.857,
+     "recall": 0.4
+    },
+    "high": {
+     "precision": 0.0,
+     "recall": 0.0
+    }
+   }
+  },
+  "gemini_2_5_pro_released_labels": {
+   "n": 38,
+   "kappa": 0.3207,
+   "kappa_ci95": [
+    0.104,
+    0.529
+   ],
+   "weighted_kappa": 0.4056,
+   "weighted_kappa_ci95": [
+    0.146,
+    0.65
+   ],
+   "agreement_pct": 55.3,
+   "confusion_rows_consensus": [
+    [
+     12,
+     1,
+     0
+    ],
+    [
+     5,
+     6,
+     4
+    ],
+    [
+     4,
+     3,
+     3
+    ]
+   ],
+   "per_class": {
+    "low": {
+     "precision": 0.571,
+     "recall": 0.923
+    },
+    "medium": {
+     "precision": 0.6,
+     "recall": 0.4
+    },
+    "high": {
+     "precision": 0.429,
+     "recall": 0.3
+    }
+   }
+  }
+ },
+ "validation_vs_released_disagreements": 8,
+ "panel2": {
+  "n_items": 102,
+  "three_way_split": 1,
+  "all_items": {
+   "pairwise_kappa": {
+    "R1_vs_R2": 0.5373,
+    "R1_vs_R3": 0.7587,
+    "R2_vs_R3": 0.5187
+   },
+   "mean_pairwise_kappa": 0.6049,
+   "pairwise_agreement_pct": {
+    "R1_vs_R2": 69.6,
+    "R1_vs_R3": 84.3,
+    "R2_vs_R3": 68.6
+   }
+  },
+  "first_panel_items": {
+   "pairwise_kappa": {
+    "R1_vs_R2": 0.7835,
+    "R1_vs_R3": 0.8534,
+    "R2_vs_R3": 0.6392
+   },
+   "mean_pairwise_kappa": 0.7587,
+   "pairwise_agreement_pct": {
+    "R1_vs_R2": 85.7,
+    "R1_vs_R3": 90.5,
+    "R2_vs_R3": 76.2
+   }
+  },
+  "new_items": {
+   "pairwise_kappa": {
+    "R1_vs_R2": 0.3551,
+    "R1_vs_R3": 0.682,
+    "R2_vs_R3": 0.417
+   },
+   "mean_pairwise_kappa": 0.4847,
+   "pairwise_agreement_pct": {
+    "R1_vs_R2": 58.3,
+    "R1_vs_R3": 80.0,
+    "R2_vs_R3": 63.3
+   }
+  }
+ },
+ "released_labels_vs_panel2_same_42_items": {
+  "n": 42,
+  "kappa": 0.2178,
+  "kappa_ci95": [
+   0.022,
+   0.411
+  ],
+  "weighted_kappa": 0.3422,
+  "weighted_kappa_ci95": [
+   0.124,
+   0.56
+  ],
+  "agreement_pct": 45.2,
+  "confusion_rows_consensus": [
+   [
+    8,
+    2,
+    0
+   ],
+   [
+    9,
+    5,
+    1
+   ],
+   [
+    6,
+    5,
+    6
+   ]
+  ],
+  "per_class": {
+   "low": {
+    "precision": 0.348,
+    "recall": 0.8
+   },
+   "medium": {
+    "precision": 0.417,
+    "recall": 0.333
+   },
+   "high": {
+    "precision": 0.857,
+    "recall": 0.353
+   }
+  }
+ },
+ "released_labels_vs_panel2_new_items": {
+  "n": 59,
+  "kappa": 0.0896,
+  "kappa_ci95": [
+   -0.099,
+   0.269
+  ],
+  "weighted_kappa": 0.3284,
+  "weighted_kappa_ci95": [
+   0.098,
+   0.515
+  ],
+  "agreement_pct": 39.0,
+  "confusion_rows_consensus": [
+   [
+    8,
+    4,
+    1
+   ],
+   [
+    10,
+    9,
+    13
+   ],
+   [
+    2,
+    6,
+    6
+   ]
+  ],
+  "per_class": {
+   "low": {
+    "precision": 0.4,
+    "recall": 0.615
+   },
+   "medium": {
+    "precision": 0.474,
+    "recall": 0.281
+   },
+   "high": {
+    "precision": 0.3,
+    "recall": 0.429
+   }
+  }
+ },
+ "released_labels_vs_panel2_all_items": {
+  "n": 101,
+  "kappa": 0.1386,
+  "kappa_ci95": [
+   -0.0,
+   0.272
+  ],
+  "weighted_kappa": 0.3203,
+  "weighted_kappa_ci95": [
+   0.156,
+   0.476
+  ],
+  "agreement_pct": 41.6,
+  "confusion_rows_consensus": [
+   [
+    16,
+    6,
+    1
+   ],
+   [
+    19,
+    14,
+    14
+   ],
+   [
+    8,
+    11,
+    12
+   ]
+  ],
+  "per_class": {
+   "low": {
+    "precision": 0.372,
+    "recall": 0.696
+   },
+   "medium": {
+    "precision": 0.452,
+    "recall": 0.298
+   },
+   "high": {
+    "precision": 0.444,
+    "recall": 0.387
+   }
+  }
+ },
+ "panel1_vs_panel2_consensus_kappa": 0.3777
+}

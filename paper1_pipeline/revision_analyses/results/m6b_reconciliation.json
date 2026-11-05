@@ -1,0 +1,85 @@
+{
+ "finding": "Published Table 3 does not describe the implemented scorer; the implemented mapping reproduces the published results.",
+ "implemented_reproduces_published_pct": 99.81,
+ "table3_vs_implemented": {
+  "exact_category_agreement_pct": 66.11,
+  "within_one_band_pct": 99.87,
+  "spearman_rank_correlation": 0.9112,
+  "distribution_implemented": {
+   "Medium": 1977,
+   "Low": 337,
+   "Critical": 189,
+   "High": 589
+  },
+  "distribution_table3_formula": {
+   "Low": 1053,
+   "Medium": 1475,
+   "High": 497,
+   "Critical": 67
+  }
+ },
+ "leakage_check": {
+  "note": "Percentile bins exist only in the Table-3 formulation. Recomputing them on a 40% calibration split and scoring the held-out 60% changes few categories, so the concern is immaterial; the implemented log mapping uses fixed constants and no data-derived thresholds at all.",
+  "p25_p75_full": [
+   1496.0,
+   8750.0
+  ],
+  "p25_p75_calibration_split": [
+   1440.5,
+   9377.5
+  ],
+  "heldout_category_change_pct": 1.24
+ },
+ "table3_vs_table4": {
+  "agreement_pct": 92.59,
+  "interpretation": "Table 4 adds attribute-based triggers that can escalate a pothole above its numeric band; the revision states that the numeric band is primary and Table 4 triggers act as escalation-only rules, resolving the ambiguity.",
+  "example_disagreements": [
+   {
+    "id": "G0010033_bbox3",
+    "depth": "low",
+    "distance": "Near",
+    "lateral": "in_lane_far_left",
+    "risk": 38.2,
+    "table3_band": "Low",
+    "table4_trigger": "Medium"
+   },
+   {
+    "id": "G0010033_bbox4",
+    "depth": "low",
+    "distance": "Near",
+    "lateral": "in_lane_far_left",
+    "risk": 37.8,
+    "table3_band": "Low",
+    "table4_trigger": "Medium"
+   },
+   {
+    "id": "G0010033_bbox5",
+    "depth": "low",
+    "distance": "Near",
+    "lateral": "in_lane_far_left",
+    "risk": 38.0,
+    "table3_band": "Low",
+    "table4_trigger": "Medium"
+   },
+   {
+    "id": "G0010117_bbox5",
+    "depth": "low",
+    "distance": "Near",
+    "lateral": "in_path_right",
+    "risk": 36.5,
+    "table3_band": "Low",
+    "table4_trigger": "Medium"
+   },
+   {
+    "id": "G0010121_bbox1",
+    "depth": "low",
+    "distance": "Near",
+    "lateral": "in_path_right",
+    "risk": 37.6,
+    "table3_band": "Low",
+    "table4_trigger": "Medium"
+   }
+  ]
+ },
+ "n_potholes": 3092
+}

@@ -1,0 +1,1425 @@
+{
+ "config": {
+  "model": "gemini-2.5-pro",
+  "dataset": "PothRGBD (independent, RGB-D)",
+  "ground_truth": "sensor-measured depth, plane-fit p90, mm",
+  "prompt": "Paper-1 verbatim depth prompt",
+  "n": 151,
+  "skipped": 0
+ },
+ "metrics": {
+  "kappa": 0.0981,
+  "quadratic_weighted_kappa": 0.1781,
+  "qwk_bootstrap_CI95": [
+   0.046,
+   0.304
+  ],
+  "exact_agreement_pct": 42.38,
+  "within_one_category_pct": 88.74,
+  "per_class": {
+   "low": {
+    "precision": 0.444,
+    "recall": 0.655,
+    "support": 55
+   },
+   "medium": {
+    "precision": 0.385,
+    "recall": 0.455,
+    "support": 55
+   },
+   "high": {
+    "precision": 0.6,
+    "recall": 0.073,
+    "support": 41
+   }
+  },
+  "confusion_rows_metric_truth": [
+   [
+    36,
+    18,
+    1
+   ],
+   [
+    29,
+    25,
+    1
+   ],
+   [
+    16,
+    22,
+    3
+   ]
+  ],
+  "metric_distribution": {
+   "low": 55,
+   "medium": 55,
+   "high": 41
+  },
+  "vlm_distribution": {
+   "medium": 65,
+   "low": 81,
+   "high": 5
+  }
+ },
+ "predictions": [
+  {
+   "image": "20250305_093918_color_png.rf.66fb30b43bcf85cf5766013eb7055598.jpg",
+   "poly_id": 0,
+   "metric_mm": 12.3,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a distinct shadow cast by a relatively sharp upper edge, indicating a depth beyond a simple surface depression. However, the shadow is not completely opaque, and the texture at th"
+  },
+  {
+   "image": "20250305_095515_color_png.rf.c4ff21655b71324ba0f63e5197f8d6f6.jpg",
+   "poly_id": 0,
+   "metric_mm": 7.1,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole interior is well-lit with minimal shadowing, and the surface texture at the bottom is clearly visible. The edges are not sharp, indicating a shallow surface depression rather than a deep h"
+  },
+  {
+   "image": "20250305_142717_color_png.rf.4f92d259fda41a6b67a3083572d9c50e.jpg",
+   "poly_id": 0,
+   "metric_mm": 11.8,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and very low contrast with the surrounding road surface. The edges are worn and not sharply defined, and the texture at the bottom of the depression is clearly v"
+  },
+  {
+   "image": "20250305_053246_color_png.rf.2f47cd93313249d3e0680d64e2f2e89a.jpg",
+   "poly_id": 0,
+   "metric_mm": 19.8,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow and soft shadows, indicating minimal depth. The edges are not sharp but rather sloped and worn. The surface texture at the bottom of the depression is clearly visible"
+  },
+  {
+   "image": "20250305_141524_color_png.rf.b763666df2f5ed1421f834a42be0ee0f.jpg",
+   "poly_id": 4,
+   "metric_mm": 2.9,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "low",
+   "vlm_reasoning": "The image is very low resolution, but the feature lacks sharp, defined edges and deep, dark shadows. The contrast between the interior and the surrounding surface is not high, suggesting a shallow sur"
+  },
+  {
+   "image": "20250305_075013_color_png.rf.04d5eb7356ca88b52f0ec91d3c3512c5.jpg",
+   "poly_id": 0,
+   "metric_mm": 11.8,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined upper edge that casts a distinct shadow, indicating a depth greater than 'low'. However, the bottom surface texture is clearly visible and not completely obs"
+  },
+  {
+   "image": "20250305_142139_color_png.rf.e171f0528a35d227e943751b475fdf84.jpg",
+   "poly_id": 3,
+   "metric_mm": 9.7,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual evidence indicates a shallow surface depression. Shadows within the cracks are minimal and not dark, and the edges are not sharply defined. The surface texture inside the cracked area is cl"
+  },
+  {
+   "image": "20250305_042433_color_png.rf.91b9314812491d4d1e14a4803d674429.jpg",
+   "poly_id": 0,
+   "metric_mm": 15.5,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges that cast distinct, dark shadows on the interior walls. This indicates a significant vertical drop, ruling out the 'low' category. However, the bottom su"
+  },
+  {
+   "image": "20250305_073152_color_png.rf.8424ea0f126804649e55207449eb6c6c.jpg",
+   "poly_id": 0,
+   "metric_mm": 14.9,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined edges and casts deep, dark shadows. The presence of standing water and debris, combined with the high contrast between the road surface and the pothole's inter"
+  },
+  {
+   "image": "20250305_141520_color_png.rf.24298aa680c4dc925ef1c15f45399eb8.jpg",
+   "poly_id": 0,
+   "metric_mm": 7.9,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows very little shadow, indicating a lack of significant depth. The edges are not sharp or well-defined, and the texture of the loose material at the bottom is clearly visible and wel"
+  },
+  {
+   "image": "20250305_034515_color_png.rf.eaf94a5ed0a848454b62f7e9bd07455e.jpg",
+   "poly_id": 0,
+   "metric_mm": 14.6,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays moderate shadowing along its upper edge, and the interior is visibly darker than the surrounding road surface. The texture of the aggregate at the bottom is still discernible, ind"
+  },
+  {
+   "image": "20250227_173949_color_png.rf.f8488c061a30495ffb932860fc221b62.jpg",
+   "poly_id": 1,
+   "metric_mm": 14.8,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits soft, shallow shadows and poorly defined, crumbling edges rather than sharp, vertical drops. The surface texture at the bottom of the depression is clearly visible, indicating a l"
+  },
+  {
+   "image": "20250305_134331_color_png.rf.1adf087f5e7a4887dd513fde229ed581.jpg",
+   "poly_id": 0,
+   "metric_mm": 18.0,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a very sharp, well-defined edge, particularly on the right side. A dark, distinct shadow is cast along this edge, indicating a significant vertical drop from the road surface. The"
+  },
+  {
+   "image": "20250305_055923_color_png.rf.efe0d46d4c2d7281283f8b3ac78af84f.jpg",
+   "poly_id": 0,
+   "metric_mm": 12.1,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges and casts a distinct, dark shadow, ruling out a 'low' depth category. However, the texture of the broken asphalt at the bottom is still visible and not c"
+  },
+  {
+   "image": "20250305_095805_color_png.rf.24d82a70ad7ddd98246cb496f7069ef6.jpg",
+   "poly_id": 0,
+   "metric_mm": 10.9,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows very little shadow and low contrast with the surrounding pavement. The edges are poorly defined and sloped rather than sharp and vertical. The texture of the aggregate at the bott"
+  },
+  {
+   "image": "20250227_170624_color_png.rf.3dda5fa6399f87744dfeb00eb3644308.jpg",
+   "poly_id": 0,
+   "metric_mm": 10.4,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The defect exhibits very faint, soft-edged shadows, indicating minimal depth. The edges are crumbled and not sharp, and the surface texture at the bottom of the depression is clearly visible and well-"
+  },
+  {
+   "image": "20250305_114447_color_png.rf.af311c5ddd12097118143be299467567.jpg",
+   "poly_id": 0,
+   "metric_mm": 6.8,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays clearly defined, sharp edges and noticeable shadows cast by the surrounding pavement, which indicates a depth beyond a simple surface depression ('low'). However, the bottom of th"
+  },
+  {
+   "image": "20250305_034055_color_png.rf.a1f0ef59b52199725e4ceeac41be7c77.jpg",
+   "poly_id": 0,
+   "metric_mm": 17.3,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The feature lacks significant shadows, and the edges are crumbled and sloped rather than sharp and vertical. The texture of the aggregate at the bottom of the depression is clearly visible, which is c"
+  },
+  {
+   "image": "20250305_140426_color_png.rf.9de8708e8bf576485a7bb31e6158972f.jpg",
+   "poly_id": 1,
+   "metric_mm": 7.5,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "low",
+   "vlm_reasoning": "The pothole interior displays moderate shadowing and contrast relative to the surrounding road surface, suggesting a depth greater than a shallow depression. However, the edges are not sharply defined"
+  },
+  {
+   "image": "20250227_162958_color_png.rf.20cd8dcb1661e422467bec532df36b9a.jpg",
+   "poly_id": 0,
+   "metric_mm": 13.3,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression exhibits soft, undefined edges and minimal shadowing. The surface texture at the bottom is clearly visible, and there is low contrast between the interior and the surrounding road surfa"
+  },
+  {
+   "image": "20250305_094634_color_png.rf.ee83b21216e5207a075e1832ebb3c21d.jpg",
+   "poly_id": 0,
+   "metric_mm": 17.0,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The bottom surface of the pothole is filled with debris that is clearly visible and well-lit. The shadows cast by the edges are not deep or dark, indicating a shallow depression consistent with the to"
+  },
+  {
+   "image": "20250227_174723_color_png.rf.83a11a1d6c601d3d642a557f19c306b0.jpg",
+   "poly_id": 0,
+   "metric_mm": 17.7,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges, indicating a depth greater than a shallow surface depression. However, the shadows cast are not excessively dark, and the texture of the debris at the b"
+  },
+  {
+   "image": "20250305_094446_color_png.rf.b605e4c7fc5cf0fd1aba215796b1f038.jpg",
+   "poly_id": 0,
+   "metric_mm": 9.0,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole interior is well-lit with minimal shadowing, and the aggregate base texture is clearly visible. The edges are crumbled and sloped rather than sharp and deep, indicating a shallow surface d"
+  },
+  {
+   "image": "20250305_114836_color_png.rf.79a240e4aa217ad8f5dc3d024906faec.jpg",
+   "poly_id": 0,
+   "metric_mm": 16.5,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The defect exhibits very shallow shadows and low contrast with the surrounding road surface. The edges are not sharply defined, and the texture of the material inside the defect is clearly visible, in"
+  },
+  {
+   "image": "20250305_114530_color_png.rf.667a4228613e701c02a4561e69169d1d.jpg",
+   "poly_id": 0,
+   "metric_mm": 12.2,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing along its edges. The edges are worn and sloped rather than sharp and vertical. The surface texture at the bottom of the depression is clearly visible and well-li"
+  },
+  {
+   "image": "20250305_035108_color_png.rf.1253d1ba9bb6425397ebb289b5d2dc32.jpg",
+   "poly_id": 0,
+   "metric_mm": 18.8,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual evidence indicates a shallow depression. There is minimal shadowing along the edges, and the lighting contrast between the pothole's interior and the surrounding road surface is low. The su"
+  },
+  {
+   "image": "20250305_093858_color_png.rf.4d2a118bfe81a22f0080ab78a58193a5.jpg",
+   "poly_id": 0,
+   "metric_mm": 7.3,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression lacks significant shadows and has very low contrast with the surrounding road surface. The edges are crumbled and not sharply defined, and the texture at the bottom is clearly visible, "
+  },
+  {
+   "image": "20250305_102150_color_png.rf.e9150c19322f7f99382d8e061b32c3a9.jpg",
+   "poly_id": 0,
+   "metric_mm": 11.3,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined upper edge that casts a distinct shadow into the depression. This indicates a depth greater than a simple surface irregularity. However, the shadow is not co"
+  },
+  {
+   "image": "20250305_082854_color_png.rf.585f120dd29e4a7e4f8ede54de3dae06.jpg",
+   "poly_id": 0,
+   "metric_mm": 16.2,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined edges and casts dark shadows on its interior walls, indicating a significant vertical drop. The ability to hold a visible pool of water further supports a clas"
+  },
+  {
+   "image": "20250305_125611_color_png.rf.db91554eff72554dfab0f9f569e95a30.jpg",
+   "poly_id": 0,
+   "metric_mm": 10.6,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding surface. The edges are crumbled and not sharply defined, and the texture at the bottom is clearly visible, all of which ind"
+  },
+  {
+   "image": "20250305_135035_color_png.rf.46331a9429094d60236b28b4bbd7aa99.jpg",
+   "poly_id": 0,
+   "metric_mm": 10.3,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays distinct shadows along its upper edge, indicating a depth greater than a shallow surface depression. However, the bottom surface texture is still clearly visible and not obscured "
+  },
+  {
+   "image": "20250305_135133_color_png.rf.5ae1f401673396c0d64a42de7eb8e7e5.jpg",
+   "poly_id": 0,
+   "metric_mm": 14.3,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The interior of the pothole is well-illuminated with minimal, soft shadows cast by the edges. The texture of the underlying surface (dirt and fine aggregate) is clearly visible and in focus, suggestin"
+  },
+  {
+   "image": "20250305_113702_color_png.rf.e9e7af6254b1c02422d502513d26e622.jpg",
+   "poly_id": 0,
+   "metric_mm": 13.4,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression exhibits soft, shallow shadows and lacks sharp, vertical edges. The surface texture at the bottom of the defect is clearly visible and well-lit, indicating a minimal depth consistent wi"
+  },
+  {
+   "image": "20250305_142220_color_png.rf.d61f3638cf8ef522452f1daf912cc2c7.jpg",
+   "poly_id": 0,
+   "metric_mm": 14.5,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows very little shadow, indicating it is not deep. The edges are crumbled and sloped rather than sharp and vertical. The texture of the material at the bottom is clearly visible and w"
+  },
+  {
+   "image": "20250305_103403_color_png.rf.7e0657f0aeba5a13b37f033a83cd256f.jpg",
+   "poly_id": 0,
+   "metric_mm": 18.5,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing, and the interior surface texture is clearly visible and well-lit. The edges are sloped and not sharply defined, which is characteristic of a shallow surface dep"
+  },
+  {
+   "image": "20250305_140851_color_png.rf.3e74ec24ef90d3d7c2e88281a1e399bc.jpg",
+   "poly_id": 0,
+   "metric_mm": 5.2,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The defect lacks significant shadows and the interior surface texture is clearly visible and well-lit. The edges are not sharp or well-defined, suggesting a shallow surface delamination rather than a "
+  },
+  {
+   "image": "20250305_095928_color_png.rf.92d9f5d516fef363166e67ffab99393a.jpg",
+   "poly_id": 0,
+   "metric_mm": 10.6,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing along its edges, and the surface texture at the bottom is clearly visible and well-illuminated. The edges are sloped rather than sharp and vertical. These cues i"
+  },
+  {
+   "image": "20250305_141909_color_png.rf.3239a90fd745e5fa24b5fe51bcf9957d.jpg",
+   "poly_id": 0,
+   "metric_mm": 9.6,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows and poorly defined, crumbling edges. The surface texture at the bottom is clearly visible with minimal lighting contrast compared to the surrounding road, ind"
+  },
+  {
+   "image": "20250305_024332_color_png.rf.c894a791ee08df2eef999c7ef9297f11.jpg",
+   "poly_id": 0,
+   "metric_mm": 12.6,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows very faint shadows and poorly defined, rounded edges. The surface texture at the bottom is clearly visible and similar to the surrounding road, indicating a minimal depth."
+  },
+  {
+   "image": "20250305_101722_color_png.rf.91d7d60ced037d919c8926eb25a15db1.jpg",
+   "poly_id": 0,
+   "metric_mm": 13.4,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined edge on its upper-left side, which casts a dark and distinct shadow. This high contrast between the sunlit road surface and the shadowed interior indicates a"
+  },
+  {
+   "image": "20250305_140423_color_png.rf.c510391af75bae588d0d2505ed3b6f12.jpg",
+   "poly_id": 1,
+   "metric_mm": 4.4,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits low contrast with the surrounding pavement, has poorly defined, rounded edges, and the surface texture at the bottom is still clearly visible. These cues indicate a shallow surfac"
+  },
+  {
+   "image": "20250305_140842_color_png.rf.ed1b44fccec6a00ec5242bb7003d15a3.jpg",
+   "poly_id": 0,
+   "metric_mm": 16.7,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The feature lacks any significant shadows or sharp vertical edges. The surface texture within the depression is clearly visible and well-illuminated, consistent with the surrounding pavement. This ind"
+  },
+  {
+   "image": "20250305_143124_color_png.rf.7b99fea8a48035a47d4220d0b6bcbad9.jpg",
+   "poly_id": 1,
+   "metric_mm": 9.4,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The feature displays minimal shadowing and low contrast with the surrounding road surface. The edges are not sharp, and the texture within the depression is clearly visible, indicating it is a shallow"
+  },
+  {
+   "image": "20250305_114711_color_png.rf.a71a7652a3b16d5e507fefffbdce87d6.jpg",
+   "poly_id": 0,
+   "metric_mm": 13.2,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding road surface. The edges are sloped and worn rather than sharp and vertical. The surface texture at the bottom of the depres"
+  },
+  {
+   "image": "20250305_135042_color_png.rf.03b83403968473f696da9555e21c4d7b.jpg",
+   "poly_id": 0,
+   "metric_mm": 4.8,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole casts a distinct and dark shadow on its interior wall, indicating a significant drop from the road surface. The edge definition is sharp, not a gradual slope, which is characteristic of a "
+  },
+  {
+   "image": "20250305_140426_color_png.rf.9de8708e8bf576485a7bb31e6158972f.jpg",
+   "poly_id": 2,
+   "metric_mm": 9.6,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a sharp, well-defined edge casting a very dark shadow. The high contrast between the road surface and the pothole's interior, along with the obscured texture in the shadowed regio"
+  },
+  {
+   "image": "20250305_034930_color_png.rf.5e481e145f86bf14a15d3351d7d8c606.jpg",
+   "poly_id": 0,
+   "metric_mm": 13.6,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual evidence indicates a shallow depression. There are no deep or dark shadows cast within the feature. The edges are poorly defined and sloped rather than sharp and vertical. The surface textu"
+  },
+  {
+   "image": "20250305_114551_color_png.rf.87875a7d54aba4462b5bae89ff2e2a05.jpg",
+   "poly_id": 0,
+   "metric_mm": 12.7,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow edges with no discernible shadows. The aggregate texture at the bottom of the depression is clearly visible through the thin layer of water, indicating a minimal dept"
+  },
+  {
+   "image": "20250305_142301_color_png.rf.14d3268563a2329c4a3188dc5b725804.jpg",
+   "poly_id": 0,
+   "metric_mm": 14.0,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadowing along its upper and right edges, indicating a noticeable depression. However, the bottom surface, composed of loose aggregate and dirt, is clearly visible and w"
+  },
+  {
+   "image": "20250305_114604_color_png.rf.fe305b2438ebf0b5c4ddba5b865e33d0.jpg",
+   "poly_id": 0,
+   "metric_mm": 7.8,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The feature shows very little shadow and minimal contrast with the surrounding road surface. The edges are not sharp or well-defined, and the texture at the bottom of the depression is clearly visible"
+  },
+  {
+   "image": "20250305_134629_color_png.rf.2bc863f3127e1bd8e48cde726fbb6499.jpg",
+   "poly_id": 0,
+   "metric_mm": 18.4,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The defect exhibits minimal shadowing and low lighting contrast between its interior and the surrounding road surface. The edges are sloped and not sharply defined, and the aggregate texture at the bo"
+  },
+  {
+   "image": "20250305_050424_color_png.rf.05d01f62e9ff1cb0c7e62a1b97230dad.jpg",
+   "poly_id": 0,
+   "metric_mm": 18.1,
+   "metric_category": "low",
+   "vlm_category": "high",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole's interior is extremely dark with deep, well-defined shadows, indicating a significant drop from the road surface. The edges are sharp and distinct, not sloped like a shallow depression. T"
+  },
+  {
+   "image": "20250305_054809_color_png.rf.700e8ea3a0be6edb277725929000480d.jpg",
+   "poly_id": 0,
+   "metric_mm": 19.8,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows minimal shadowing and low lighting contrast between its interior and the surrounding road surface. The edges are poorly defined and sloped, not sharp. The texture at the bottom of"
+  },
+  {
+   "image": "20250305_052031_color_png.rf.a9cbc4011cef2bde3af0449e0598516f.jpg",
+   "poly_id": 0,
+   "metric_mm": 17.3,
+   "metric_category": "low",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The area lacks sharp, defined edges and deep shadows. The surface texture at the bottom is clearly visible and well-lit, indicating a shallow surface depression rather than a deep cavity."
+  },
+  {
+   "image": "20250305_133703_color_png.rf.4c025948e03755167d036dbfc84f8278.jpg",
+   "poly_id": 0,
+   "metric_mm": 10.0,
+   "metric_category": "low",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The texture and aggregate at the bottom of the pothole are clearly visible and well-illuminated, ruling out a high depth category. However, the shadows cast by the edges are distinct and the edges the"
+  },
+  {
+   "image": "20250305_045928_color_png.rf.b27347e8c5fa50a970182ab8f278b17c.jpg",
+   "poly_id": 0,
+   "metric_mm": 40.7,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges and casts a significant shadow, ruling out a 'low' depth. However, the surface texture at the bottom is still clearly visible and not obscured by deep da"
+  },
+  {
+   "image": "20250305_022135_color_png.rf.d63e6c77cf045cda5d83bfef264b1eb0.jpg",
+   "poly_id": 0,
+   "metric_mm": 26.9,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows minimal shadowing and low contrast between its interior and the surrounding road surface. The edges are crumbled and not sharply defined, and the texture at the bottom is clearly "
+  },
+  {
+   "image": "20250305_050841_color_png.rf.4e8a02072db06a27b7d3a287ca05b4bf.jpg",
+   "poly_id": 0,
+   "metric_mm": 24.8,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual evidence points to a shallow depression. There are no significant shadows cast by the edges, which themselves are poorly defined and blend into the surrounding surface. The texture of the a"
+  },
+  {
+   "image": "20250305_053709_color_png.rf.0d769c9cd7bdf5ce1164d5498ae80f88.jpg",
+   "poly_id": 0,
+   "metric_mm": 32.5,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges that cast distinct shadows on the interior. This indicates a significant vertical drop, inconsistent with a 'low' depth category. The contrast between th"
+  },
+  {
+   "image": "20250305_024941_color_png.rf.257f41d44ccc924f8b1b2d172c694c0b.jpg",
+   "poly_id": 0,
+   "metric_mm": 32.7,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding pavement. The edges are sloped and not sharply defined, and the surface texture at the bottom is clearly visible. These cue"
+  },
+  {
+   "image": "20250305_061843_color_png.rf.85426218941d4708d19f46e183612d82.jpg",
+   "poly_id": 0,
+   "metric_mm": 36.6,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a sharp, well-defined upper edge that casts a distinct and dark shadow into the depression. This indicates a significant vertical drop, inconsistent with a 'low' depth category. T"
+  },
+  {
+   "image": "20250305_031412_color_png.rf.526be99da8b6ba2d04b55d3052bffe88.jpg",
+   "poly_id": 0,
+   "metric_mm": 21.0,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding road surface. The texture at the bottom of the depression is clearly visible, and the edges are not sharp, all of which ind"
+  },
+  {
+   "image": "20250305_052544_color_png.rf.e42885dcd987eda8af85bc91a14fdfb0.jpg",
+   "poly_id": 0,
+   "metric_mm": 36.3,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows, indicating a minimal depth. The texture at the bottom of the depression is clearly visible and well-lit, which would not be the case for a deeper hole. The e"
+  },
+  {
+   "image": "20250305_133540_color_png.rf.15f108b8b85bad4c2a06edbffc04ad7b.jpg",
+   "poly_id": 0,
+   "metric_mm": 29.1,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadowing, indicating a noticeable but not extreme depth. The texture of the aggregate at the bottom is clearly visible, which would be obscured in a high-depth pothole. "
+  },
+  {
+   "image": "20250227_180537_color_png.rf.1c43a58cc160415e9b6b4c1a636415a5.jpg",
+   "poly_id": 0,
+   "metric_mm": 27.8,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadows along its upper edge, and the bottom texture of loose aggregate is clearly visible. This indicates a depth beyond a simple surface depression but lacks the deep, "
+  },
+  {
+   "image": "20250305_060649_color_png.rf.93c1562cd688b80e2acc8c50a1271a53.jpg",
+   "poly_id": 0,
+   "metric_mm": 42.6,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined edge that casts a dark, distinct shadow on its interior wall. This high contrast and sharp edge definition indicate a significant vertical drop, ruling out a"
+  },
+  {
+   "image": "20250305_054221_color_png.rf.36632559b3b793a7ad69a9cb14a9a942.jpg",
+   "poly_id": 0,
+   "metric_mm": 25.9,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows and poorly defined, crumbled edges. The texture of the aggregate at the bottom is clearly visible and well-lit, indicating a lack of significant depth. This a"
+  },
+  {
+   "image": "20250305_060007_color_png.rf.2f2105229cd48ce48fb2004bfc737f4d.jpg",
+   "poly_id": 0,
+   "metric_mm": 21.1,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole lacks significant shadows, and the lighting inside is nearly identical to the surrounding surface. The edges are not sharp, and the texture at the bottom of the depression is clearly visib"
+  },
+  {
+   "image": "20250227_190626_color_png.rf.0b38d445447b65753bbf3766efc9ea11.jpg",
+   "poly_id": 0,
+   "metric_mm": 33.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding surface. The edges are crumbled and sloped rather than sharp and vertical, and the texture at the bottom is clearly visible"
+  },
+  {
+   "image": "20250305_060227_color_png.rf.3e8abd22d1d911ff601724b37e1d4ec0.jpg",
+   "poly_id": 0,
+   "metric_mm": 35.8,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole casts a distinct but not excessively dark shadow along its upper edge, indicating a moderate depth. The edges are defined but appear somewhat sloped rather than being sharp vertical drops."
+  },
+  {
+   "image": "20250305_133525_color_png.rf.6fc9dbe78b85bd721dd499f8f25cdba0.jpg",
+   "poly_id": 0,
+   "metric_mm": 28.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows, indicating minimal depth. The edges are crumbled and sloped rather than sharp and vertical. The texture of the underlying material at the bottom of the depre"
+  },
+  {
+   "image": "20250227_185406_color_png.rf.bc249c33b27ddcb55d285e062c741ee1.jpg",
+   "poly_id": 0,
+   "metric_mm": 39.3,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadows and defined, crumbled edges, but lacks the deep, dark shadows characteristic of a high-depth hazard. The aggregate base at the bottom is clearly visible, indicati"
+  },
+  {
+   "image": "20250305_111241_color_png.rf.e44e62c1b52bf9f57edab00cebecc86b.jpg",
+   "poly_id": 0,
+   "metric_mm": 20.4,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a sharp, well-defined upper edge that casts a dark, distinct shadow into its interior. This high contrast between the road surface and the shadowed bottom indicates a significant "
+  },
+  {
+   "image": "20250305_050349_color_png.rf.5daa34f05127b45ca959f12711d14a18.jpg",
+   "poly_id": 0,
+   "metric_mm": 40.9,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole interior is well-lit with minimal shadowing, indicating a shallow depression. The edges are crumbled and not sharply defined, and the loose aggregate at the bottom is clearly visible. This"
+  },
+  {
+   "image": "20250227_180940_color_png.rf.5bc56d4c5e41ddad3299b02e66464f74.jpg",
+   "poly_id": 0,
+   "metric_mm": 36.5,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined vertical edges that cast distinct shadows, indicating a significant drop from the road surface. The presence of displaced aggregate and the ability to hold a p"
+  },
+  {
+   "image": "20250227_173136_color_png.rf.d893f145c0b61faea04570f6c41a0f50.jpg",
+   "poly_id": 0,
+   "metric_mm": 29.8,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "medium",
+   "vlm_reasoning": "The pothole is filled with muddy water, which obscures the true bottom and prevents a clear analysis of shadow depth. However, the edges are clearly broken and recessed from the main road surface. Chu"
+  },
+  {
+   "image": "20250305_053309_color_png.rf.98c67e46f0c9195c064248486bed35a1.jpg",
+   "poly_id": 0,
+   "metric_mm": 41.9,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast between its interior and the surrounding surface. The texture at the bottom of the depression is clearly visible, and the edges are crumbled and"
+  },
+  {
+   "image": "20250305_095332_color_png.rf.acc37aa3ba78f201680c29c8e81bd4a9.jpg",
+   "poly_id": 0,
+   "metric_mm": 28.3,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadowing and defined, albeit crumbling, edges, indicating a depth greater than a shallow surface depression. The bottom surface, filled with loose aggregate and dirt, is"
+  },
+  {
+   "image": "20250305_075513_color_png.rf.784200ac880c94fa32f70e03df45c114.jpg",
+   "poly_id": 0,
+   "metric_mm": 25.0,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a distinct, sharp edge where the asphalt has broken away, casting a clear shadow. This indicates a depth greater than a shallow depression. However, the texture of the underlying "
+  },
+  {
+   "image": "20250305_143305_color_png.rf.5ae7ca7239377ceebf364f8a74b4a6fa.jpg",
+   "poly_id": 0,
+   "metric_mm": 21.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding road surface. The edges are crumbled and sloped rather than sharp, and the texture of the aggregate at the bottom is clearl"
+  },
+  {
+   "image": "20250305_053753_color_png.rf.851bdd831d31a02dc61859ade85fbfe9.jpg",
+   "poly_id": 0,
+   "metric_mm": 41.4,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges and casts distinct shadows, ruling out a 'low' depth. However, the texture of the aggregate at the bottom is clearly visible and not obscured by deep sha"
+  },
+  {
+   "image": "20250305_052507_color_png.rf.95de3a03136978f8aff629b6cd3db29a.jpg",
+   "poly_id": 0,
+   "metric_mm": 34.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows and poorly defined, sloped edges. The surface texture at the bottom is clearly visible and there is minimal lighting contrast between the interior and the sur"
+  },
+  {
+   "image": "20250227_135652_color_png.rf.c3e37f97ea7f729ce0c04d4272dbab7d.jpg",
+   "poly_id": 0,
+   "metric_mm": 32.6,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadowing along its upper edges, indicating a noticeable depression. However, the aggregate texture at the bottom of the pothole is still clearly visible and well-lit, wh"
+  },
+  {
+   "image": "20250305_115048_color_png.rf.306b81a3cb15ef4617552fd126d0fc37.jpg",
+   "poly_id": 0,
+   "metric_mm": 27.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows very weak, diffuse shadows and lacks sharp, well-defined edges. The transition from the road surface to the interior is gradual and sloped. The texture at the bottom of the depres"
+  },
+  {
+   "image": "20250305_053130_color_png.rf.2e9554cf33da337bc1cb700358b0c330.jpg",
+   "poly_id": 0,
+   "metric_mm": 28.4,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding surface. The edges are not sharp, and the texture at the bottom is clearly visible, all of which indicate a shallow depress"
+  },
+  {
+   "image": "20250305_141551_color_png.rf.b6b47192746e297a69150ce8c345ba53.jpg",
+   "poly_id": 0,
+   "metric_mm": 22.3,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges and casts a distinct shadow, indicating a depth greater than 'low'. However, the texture of the debris at the bottom is clearly visible and not fully obs"
+  },
+  {
+   "image": "20250305_132405_color_png.rf.0a19d9e163d3bc3d6f463dbcbc2ea1a6.jpg",
+   "poly_id": 0,
+   "metric_mm": 20.9,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows and sloped, indistinct edges. The aggregate at the bottom is clearly visible and well-illuminated, indicating a lack of significant depth. The overall lightin"
+  },
+  {
+   "image": "20250227_170828_color_png.rf.e53ba1781873fbae3a0eedb0314753b6.jpg",
+   "poly_id": 0,
+   "metric_mm": 20.8,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined vertical edges and casts a deep, dark shadow on its interior surface. The high contrast between the road surface and the shadowed bottom indicates a significan"
+  },
+  {
+   "image": "20250227_190210_color_png.rf.8b7bbab707643b5c8db0fbed41a66ee3.jpg",
+   "poly_id": 0,
+   "metric_mm": 31.7,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, defined edges and casts a noticeable shadow, ruling out a 'low' depth. However, the texture at the bottom of the pothole is still clearly visible and the interior is not ex"
+  },
+  {
+   "image": "20250227_182831_color_png.rf.fb2503d751875feb03af9b938bc2ce31.jpg",
+   "poly_id": 0,
+   "metric_mm": 29.1,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole interior is well-illuminated with minimal and faint shadows, indicating a shallow depression. The edges are sloped and not sharp, and the texture of the bottom surface is clearly visible. "
+  },
+  {
+   "image": "20250305_054517_color_png.rf.f356fc4650bfd07d179966d9a3d79e15.jpg",
+   "poly_id": 0,
+   "metric_mm": 45.3,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The image shows very little shadow within the pothole area, and the edges are not sharp or distinct. The texture of the aggregate at the bottom is clearly visible and evenly lit, which is characterist"
+  },
+  {
+   "image": "20250305_124827_color_png.rf.98a00042e0ee74d4710950dabdef96f7.jpg",
+   "poly_id": 0,
+   "metric_mm": 41.6,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The image shows minimal shadowing within the pothole's perimeter. The edges are not sharp or distinct, but rather sloped and gradual. The surface texture at the bottom of the depression is clearly vis"
+  },
+  {
+   "image": "20250305_110944_color_png.rf.94b05d5ce063279ee849c4210d43be34.jpg",
+   "poly_id": 0,
+   "metric_mm": 22.0,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays distinct shadows and sharp edges, indicating a depth beyond a simple surface depression. However, the texture of the aggregate at the bottom is still clearly visible and not obscu"
+  },
+  {
+   "image": "20250305_125432_color_png.rf.81360b7ac371510f101a2c8daabb1928.jpg",
+   "poly_id": 0,
+   "metric_mm": 44.7,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual analysis reveals minimal shadowing within the depression, and the edges are sloped and poorly defined rather than sharp. The texture of the aggregate at the bottom is clearly visible and we"
+  },
+  {
+   "image": "20250305_053543_color_png.rf.1c0315b4cdd1feeb456979988900ffe5.jpg",
+   "poly_id": 0,
+   "metric_mm": 37.9,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole interior is well-illuminated with minimal, soft shadows, indicating a lack of significant depth. The texture of the debris at the bottom is clearly visible and in focus. The edges are erod"
+  },
+  {
+   "image": "20250305_082316_color_png.rf.6434e9757b709238d485b0c2fd8ee87d.jpg",
+   "poly_id": 0,
+   "metric_mm": 23.8,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows minimal shadowing and low contrast with the surrounding road surface. The edges are not sharp, and the texture at the bottom of the feature is clearly visible, all of which are in"
+  },
+  {
+   "image": "20250227_183800_color_png.rf.3e33ac0b1dc66accb2857915d2059b7e.jpg",
+   "poly_id": 0,
+   "metric_mm": 38.2,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The feature shows minimal shadow and has poorly defined, gradual edges. The surface texture within the depression is clearly visible and there is very low lighting contrast between the interior and th"
+  },
+  {
+   "image": "20250305_123515_color_png.rf.2ef74411e11b39b13b14c3bca0a1d75a.jpg",
+   "poly_id": 0,
+   "metric_mm": 36.3,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined edges, particularly on the right side, which cast dark and distinct shadows. This high contrast between the road surface and the pothole's interior indicates a"
+  },
+  {
+   "image": "20250305_053002_color_png.rf.d6bb049a8398875c8f0c52f3c6aa0534.jpg",
+   "poly_id": 0,
+   "metric_mm": 44.7,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual evidence indicates a shallow depression. The shadows cast are minimal and not dark, the edges are worn and sloped rather than sharp and vertical, and the surface texture at the bottom of th"
+  },
+  {
+   "image": "20250305_123648_color_png.rf.6075d48f01667b665d57a61a61afbd76.jpg",
+   "poly_id": 0,
+   "metric_mm": 33.8,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges, indicating a clear vertical drop from the road surface. The shadows cast by these edges are distinct but not excessively dark, and the texture of the de"
+  },
+  {
+   "image": "20250305_021844_color_png.rf.2faacc2ce8c2fe45b3c280a840b79f1a.jpg",
+   "poly_id": 0,
+   "metric_mm": 44.6,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined edges and casts deep, dark shadows on its interior walls, particularly visible on the right side. This high contrast between the road surface and the pothole's"
+  },
+  {
+   "image": "20250305_124302_color_png.rf.647e0b0fde9372e58309fdee2e124795.jpg",
+   "poly_id": 0,
+   "metric_mm": 27.7,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The lighting within the pothole is nearly identical to the surrounding surface, indicating a lack of significant depth. Edges are crumbled and sloped rather than sharp and vertical, and there are no d"
+  },
+  {
+   "image": "20250305_124818_color_png.rf.39971d985c3cca46c018ebe4683700a4.jpg",
+   "poly_id": 0,
+   "metric_mm": 43.8,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a distinct shadow along its upper-left edge, indicating a significant drop-off inconsistent with a 'low' depth. However, the shadow is not deep enough to obscure the surface textu"
+  },
+  {
+   "image": "20250305_045711_color_png.rf.e7120e0c308554901563e8473da9fdfb.jpg",
+   "poly_id": 0,
+   "metric_mm": 33.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low lighting contrast with the surrounding road surface. The texture of the material at the bottom of the depression is clearly visible, and the edges are cr"
+  },
+  {
+   "image": "20250227_185502_color_png.rf.063f63a6ba2cbfe5dbce43b45d35db71.jpg",
+   "poly_id": 0,
+   "metric_mm": 38.7,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very weak and diffuse shadows, indicating a lack of significant depth. The edges are crumbled and sloped rather than sharp and vertical. The texture at the bottom is clearly visib"
+  },
+  {
+   "image": "20250305_112342_color_png.rf.e74415c7e6ef5964a7c2a978b0964c03.jpg",
+   "poly_id": 0,
+   "metric_mm": 24.3,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a well-defined, sharp upper edge that casts a distinct shadow into the interior. However, the bottom surface texture remains visible and is not completely obscured by darkness. Th"
+  },
+  {
+   "image": "20250305_131930_color_png.rf.a61c824603bd5cd0e24126ea1ab5fe47.jpg",
+   "poly_id": 0,
+   "metric_mm": 46.6,
+   "metric_category": "medium",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined vertical edge on the left side and casts distinct, dark shadows on the right. These cues indicate a significant drop-off inconsistent with a 'low' depth. Whi"
+  },
+  {
+   "image": "20250305_051101_color_png.rf.2299ea2130cf1efa4e10c35871c136df.jpg",
+   "poly_id": 0,
+   "metric_mm": 20.9,
+   "metric_category": "medium",
+   "vlm_category": "high",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very dark, deep shadows and high contrast with the surrounding sunlit surface. The edges are sharply defined and appear to represent a significant vertical drop rather than a shal"
+  },
+  {
+   "image": "20250305_055152_color_png.rf.2af4fd3106066bd6a7a1c6fc4ccce543.jpg",
+   "poly_id": 0,
+   "metric_mm": 28.4,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow and indistinct edges with minimal shadowing. The surface texture inside the depression is clearly visible and similar in brightness to the surrounding road, indicatin"
+  },
+  {
+   "image": "20250305_114119_color_png.rf.b896ea50e332c4dcbb6dc7c2557031e1.jpg",
+   "poly_id": 0,
+   "metric_mm": 23.5,
+   "metric_category": "medium",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits shallow, soft-edged shadows, and the texture of its bottom surface is clearly visible. The edges are sloped and degraded rather than sharp and vertical, indicating a surface-level"
+  },
+  {
+   "image": "20250227_183313_color_png.rf.5bc506e7e6da57dc9a02724978774c63.jpg",
+   "poly_id": 0,
+   "metric_mm": 50.1,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast between its interior and the surrounding road surface. The edges are poorly defined and gradual, and the texture at the bottom is clearly visibl"
+  },
+  {
+   "image": "20250305_133543_color_png.rf.94bc86ce9cfff1d21128774b2d01d3b9.jpg",
+   "poly_id": 0,
+   "metric_mm": 54.8,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined edges that cast distinct shadows, particularly on the upper and left sides. This indicates a significant vertical drop inconsistent with a 'low' depth category"
+  },
+  {
+   "image": "20250305_023142_color_png.rf.c7d225effb3be33fdd98faa302b65250.jpg",
+   "poly_id": 0,
+   "metric_mm": 51.9,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a distinct, sharp edge along its upper boundary, casting a noticeable shadow. This indicates a significant vertical drop, ruling out the 'low' category. However, the texture and a"
+  },
+  {
+   "image": "20250305_110516_color_png.rf.4a464502cbdb8b98cae935362cb6c17a.jpg",
+   "poly_id": 0,
+   "metric_mm": 87.0,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression exhibits gradual, poorly defined edges rather than sharp, vertical drops. There are no deep shadows within the area, and the surface texture at the bottom is clearly visible and well-li"
+  },
+  {
+   "image": "20250227_191936_color_png.rf.e923507811d2522ce4c7ac55a3e437ae.jpg",
+   "poly_id": 0,
+   "metric_mm": 50.1,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a sharp, well-defined top edge that casts a dark, distinct shadow into its interior. This high contrast and sharp edge definition are strong indicators of a significant vertical d"
+  },
+  {
+   "image": "20250227_175001_color_png.rf.49b9263aa7c03a195ec30c32b62da068.jpg",
+   "poly_id": 0,
+   "metric_mm": 53.7,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderately defined edges with some visible shadow casting, indicating it is more than a superficial depression. However, the texture of the aggregate at the bottom is still clearl"
+  },
+  {
+   "image": "20250305_125548_color_png.rf.6e201bce8a72c08cd52e295a67b2049b.jpg",
+   "poly_id": 0,
+   "metric_mm": 57.0,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges and casts distinct, dark shadows, particularly on the upper side. This indicates a significant vertical drop that has penetrated the top asphalt layer, e"
+  },
+  {
+   "image": "20250305_055325_color_png.rf.3b20901b0e75292af927b54aa99fb864.jpg",
+   "poly_id": 0,
+   "metric_mm": 52.2,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing and low contrast with the surrounding road surface. The edges are gradual and not sharply defined, and the texture at the bottom of the depression is clearly vis"
+  },
+  {
+   "image": "20250305_054335_color_png.rf.b9487466a81938f62b175a185f3b2985.jpg",
+   "poly_id": 0,
+   "metric_mm": 51.0,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual evidence indicates a shallow depression. There are minimal shadows cast along the edges, and the edges themselves are sloped and poorly defined rather than sharp and vertical. The texture o"
+  },
+  {
+   "image": "20250227_185544_color_png.rf.4ce44972fbfd087d3dd33814ea517c73.jpg",
+   "poly_id": 0,
+   "metric_mm": 52.8,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very weak and diffuse shadows, indicating a shallow depression. The edges are gradual and not sharply defined, and the texture of the bottom surface is clearly visible, suggesting"
+  },
+  {
+   "image": "20250227_184542_color_png.rf.0e4cacd393610037ffcc5f5c0175997c.jpg",
+   "poly_id": 0,
+   "metric_mm": 57.2,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very little shadow, indicating it is not deep. The edges are worn and sloped rather than sharp and vertical. The texture of the bottom surface is clearly visible and well-lit, whi"
+  },
+  {
+   "image": "20250227_182812_color_png.rf.ce637a3d1d506102e4df4633ae61eb8a.jpg",
+   "poly_id": 0,
+   "metric_mm": 58.4,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression shows very faint shadows and soft, undefined edges. The texture at the bottom is clearly visible and there is minimal lighting contrast between the interior and the surrounding road sur"
+  },
+  {
+   "image": "20250227_182730_color_png.rf.31e613fb6a51fc91a68e92f9c26900dc.jpg",
+   "poly_id": 0,
+   "metric_mm": 56.8,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very shallow shadows and rounded, indistinct edges. The texture at the bottom of the depression is clearly visible and well-lit, indicating a lack of significant depth and low con"
+  },
+  {
+   "image": "20250305_074406_color_png.rf.530ece45a548a9a5d9845db5511b90b3.jpg",
+   "poly_id": 0,
+   "metric_mm": 87.4,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined vertical edges and casts a dark, distinct shadow. This high contrast between the road surface and the pothole interior indicates a significant depth, consisten"
+  },
+  {
+   "image": "20250305_123631_color_png.rf.3a31d75de36982905e0c3b180b592487.jpg",
+   "poly_id": 0,
+   "metric_mm": 52.5,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a very sharp, well-defined edge that casts a dark, high-contrast shadow. This indicates a significant vertical drop, inconsistent with a shallow 'low' depth depression. The depth "
+  },
+  {
+   "image": "20250305_034328_color_png.rf.325cfd2f79ccc7b6b9a68454d4bce801.jpg",
+   "poly_id": 0,
+   "metric_mm": 60.5,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges that cast distinct shadows, indicating a depth greater than a shallow depression. However, the aggregate material at the bottom is well-illuminated and i"
+  },
+  {
+   "image": "20250227_175216_color_png.rf.568ee55eb3c6b336adbcd39e85e3ae28.jpg",
+   "poly_id": 0,
+   "metric_mm": 56.8,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual analysis indicates a low depth. There are no significant shadows cast by the edges, and the lighting contrast between the interior and the surrounding pavement is minimal. The edges are wor"
+  },
+  {
+   "image": "20250227_183055_color_png.rf.27f836357ddcaa065dd8fd519de7bfb7.jpg",
+   "poly_id": 0,
+   "metric_mm": 52.6,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The depression exhibits very weak to non-existent shadows along its edges. The transition from the road surface to the pothole interior is gradual and not sharply defined. The texture at the bottom of"
+  },
+  {
+   "image": "20250305_083300_color_png.rf.2739641369b41acdc83504a1c0e87223.jpg",
+   "poly_id": 0,
+   "metric_mm": 52.3,
+   "metric_category": "high",
+   "vlm_category": "high",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very sharp, well-defined edges, indicating a significant structural failure rather than surface wear. The visible thickness of the broken asphalt layer appears substantial, and de"
+  },
+  {
+   "image": "20250305_125029_color_png.rf.955b05884e484b6e949537009230d3e6.jpg",
+   "poly_id": 0,
+   "metric_mm": 54.9,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a sharp, well-defined upper edge that casts a distinct and dark shadow into the depression. This strong contrast and sharp edge indicate a significant vertical drop that has fully"
+  },
+  {
+   "image": "20250305_131902_color_png.rf.4f0215f542269c1bdad24da7b91959db.jpg",
+   "poly_id": 0,
+   "metric_mm": 60.8,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges, especially along the bottom boundary, which indicates a drop equivalent to the thickness of the asphalt layer. There are distinct shadows cast inside th"
+  },
+  {
+   "image": "20250305_050811_color_png.rf.bc62616ff9ea616cf8317dc4360e4b7e.jpg",
+   "poly_id": 0,
+   "metric_mm": 62.7,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits moderate shadowing and a clearly defined vertical edge, suggesting a depth greater than a shallow depression. However, the bottom surface, filled with gravel, is fully visible wit"
+  },
+  {
+   "image": "20250305_082631_color_png.rf.36742420bc3e77dcfa9a252546913510.jpg",
+   "poly_id": 0,
+   "metric_mm": 61.9,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sloped, poorly defined edges rather than sharp, vertical ones. There is minimal shadowing within the depression, and the surface texture at the bottom is clearly visible. This com"
+  },
+  {
+   "image": "20250305_050527_color_png.rf.19f90b434ce65ad36f1c59188dfed457.jpg",
+   "poly_id": 0,
+   "metric_mm": 58.7,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The visual analysis shows very faint shadows and poorly defined, sloped edges. The surface texture within the depression is clearly visible and not obscured by darkness, indicating a lack of significa"
+  },
+  {
+   "image": "20250227_174404_color_png.rf.1bdb3400e1ca3875235b70980a95d0a2.jpg",
+   "poly_id": 0,
+   "metric_mm": 67.2,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined vertical edges, suggesting a depth greater than 'low'. However, the interior is well-lit with minimal shadowing and the bottom surface texture is clearly visib"
+  },
+  {
+   "image": "20250227_192501_color_png.rf.594545ab8e5dee2b6283325068d85a14.jpg",
+   "poly_id": 0,
+   "metric_mm": 50.3,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges on the left side, which cast dark and distinct shadows. This indicates a significant vertical drop, ruling out the 'low' category. The bottom of the poth"
+  },
+  {
+   "image": "20250305_053324_color_png.rf.a3d6fc958528aa5d856b8d275a1e8cf5.jpg",
+   "poly_id": 0,
+   "metric_mm": 60.6,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits sharp, well-defined edges and casts a distinct, dark shadow on its interior. This high contrast indicates a significant vertical drop, consistent with a depth of 2-5cm, rather tha"
+  },
+  {
+   "image": "20250305_124933_color_png.rf.18741c2940312bda8fe0e8d447515d93.jpg",
+   "poly_id": 0,
+   "metric_mm": 62.9,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a distinct vertical edge with moderate shadowing, indicating a depth greater than a shallow surface depression. However, the texture of the debris at the bottom is clearly visible"
+  },
+  {
+   "image": "20250227_184609_color_png.rf.43a41c7355c237dec154f6d4b6027795.jpg",
+   "poly_id": 0,
+   "metric_mm": 60.1,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits minimal shadowing along its edges, and the lighting inside the depression is very similar to the surrounding road surface. The edges are worn and sloped rather than sharp and vert"
+  },
+  {
+   "image": "20250305_023226_color_png.rf.9da2b16defb3637d8cdcfa1451bebd77.jpg",
+   "poly_id": 0,
+   "metric_mm": 56.2,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole interior is well-lit with no significant shadows cast by its edges, indicating a lack of depth. The texture of the aggregate at the bottom is clearly visible and in focus. The edges are cr"
+  },
+  {
+   "image": "20250305_142436_color_png.rf.b61ed83f22049006f1df8e389c0a0471.jpg",
+   "poly_id": 0,
+   "metric_mm": 87.9,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined edge with a distinct shadow, indicating a depth greater than a shallow surface depression. However, the interior surface texture is clearly visible and not o"
+  },
+  {
+   "image": "20250227_172520_color_png.rf.8eaad20be9ebdc947c2a8ad1b13a8bee.jpg",
+   "poly_id": 0,
+   "metric_mm": 57.6,
+   "metric_category": "high",
+   "vlm_category": "high",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits deep, dark shadows and high contrast with the surrounding pavement. The edges are sharply defined, indicating a significant vertical drop rather than a shallow depression. The int"
+  },
+  {
+   "image": "20250305_081309_color_png.rf.1218128273d9e3e4ec62c839eef55bb6.jpg",
+   "poly_id": 0,
+   "metric_mm": 71.8,
+   "metric_category": "high",
+   "vlm_category": "high",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The presence of a deep, dark shadow along the left edge, combined with a sharp, well-defined vertical drop-off, indicates a significant depth greater than 5cm. The high contrast between the sunlit roa"
+  },
+  {
+   "image": "20250227_180722_color_png.rf.905d683c194b509d6824c127a812a1bc.jpg",
+   "poly_id": 0,
+   "metric_mm": 60.8,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits clearly defined edges and moderate shadowing, indicating a depth greater than a shallow surface depression. However, the texture of the aggregate at the bottom is fully visible an"
+  },
+  {
+   "image": "20250305_103310_color_png.rf.8999c72f8e4e66bdfeaf6c6f5d849b9e.jpg",
+   "poly_id": 0,
+   "metric_mm": 50.9,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp upper edge that casts a distinct, dark shadow into the depression. This strong contrast and well-defined edge are inconsistent with a shallow 'low' depth. While the shadow"
+  },
+  {
+   "image": "20250305_061340_color_png.rf.ce8e256c5283c391629612036634b702.jpg",
+   "poly_id": 0,
+   "metric_mm": 63.8,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a very shallow shadow along its upper edge, and the edges themselves are sloped and worn rather than sharp and vertical. The texture of the aggregate base is clearly visible and w"
+  },
+  {
+   "image": "20250227_190842_color_png.rf.be259cbad0ac5781f6b02208b1e19a94.jpg",
+   "poly_id": 0,
+   "metric_mm": 56.8,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits a sharp, well-defined edge that casts a dark and distinct shadow into its interior. The high contrast between the sunlit road surface and the shadowed base indicates a significant"
+  },
+  {
+   "image": "20250305_061103_color_png.rf.2ea619c875e799c58f1b6c7f34a07f57.jpg",
+   "poly_id": 0,
+   "metric_mm": 55.3,
+   "metric_category": "high",
+   "vlm_category": "low",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole exhibits very weak shadows and low lighting contrast between its interior and the surrounding road surface. The edges are crumbled and not sharply defined, and the texture of the debris at"
+  },
+  {
+   "image": "20250305_134212_color_png.rf.808ed5f1b7af37bd5b7fd56f8b7ebf61.jpg",
+   "poly_id": 0,
+   "metric_mm": 51.1,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole casts a deep, dark shadow with a sharp, well-defined edge on the right side, indicating a significant vertical drop. The high contrast between the sunlit road surface and the shadowed inte"
+  },
+  {
+   "image": "20250305_100402_color_png.rf.8f2731e6b4000cc136a7ad4e3f6798fd.jpg",
+   "poly_id": 0,
+   "metric_mm": 51.9,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays a sharp, well-defined edge with a distinct shadow, indicating a depth greater than a shallow depression. The visible thickness of the asphalt layer at the break supports this. How"
+  },
+  {
+   "image": "20250305_132212_color_png.rf.97aaee2572f634479304927246b90b20.jpg",
+   "poly_id": 0,
+   "metric_mm": 57.3,
+   "metric_category": "high",
+   "vlm_category": "medium",
+   "vlm_confidence": "high",
+   "vlm_reasoning": "The pothole displays sharp, well-defined edges, indicating a depth greater than a shallow depression. However, the interior base is well-lit with clearly visible texture and only moderate shadowing, w"
+  }
+ ]
+}

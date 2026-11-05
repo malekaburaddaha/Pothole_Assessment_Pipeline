@@ -1,0 +1,122 @@
+{
+ "urgency": {
+  "n_scenes": 1119,
+  "image_only": {
+   "medium": 306,
+   "high": 658,
+   "critical": 77,
+   "low": 78
+  },
+  "hybrid": {
+   "medium": 596,
+   "critical": 161,
+   "high": 304,
+   "low": 58
+  },
+  "stuart_maxwell_chi2": 260.14,
+  "df": 3,
+  "p": 4.1920396142329845e-56,
+  "high_to_medium": 299,
+  "high_to_critical": 110,
+  "cohen_kappa": 0.1865,
+  "exact_agreement_pct": 44.6,
+  "adjacent_agreement_pct": 95.4
+ },
+ "clarity": {
+  "hybrid_mean_sd": [
+   4.04,
+   0.87
+  ],
+  "image_only_mean_sd": [
+   3.21,
+   1.04
+  ],
+  "mean_difference": 0.827,
+  "scene_bootstrap_ci95": [
+   0.54,
+   1.11
+  ],
+  "scene_level_wilcoxon_p": 6.5998291417252335e-06,
+  "per_rater": {
+   "R1": {
+    "mean_difference": 0.86,
+    "wilcoxon_p": 1.0119256007297702e-05
+   },
+   "R2": {
+    "mean_difference": 0.8,
+    "wilcoxon_p": 7.881828660059393e-05
+   },
+   "R3": {
+    "mean_difference": 0.82,
+    "wilcoxon_p": 1.446646431012018e-05
+   }
+  }
+ },
+ "safety": {
+  "hybrid_mean_sd": [
+   3.98,
+   1.01
+  ],
+  "image_only_mean_sd": [
+   3.25,
+   1.12
+  ],
+  "mean_difference": 0.727,
+  "scene_bootstrap_ci95": [
+   0.36,
+   1.11
+  ],
+  "scene_level_wilcoxon_p": 0.0007242632257948163,
+  "per_rater": {
+   "R1": {
+    "mean_difference": 0.66,
+    "wilcoxon_p": 0.002292376634210915
+   },
+   "R2": {
+    "mean_difference": 0.8,
+    "wilcoxon_p": 0.0014009949682029154
+   },
+   "R3": {
+    "mean_difference": 0.72,
+    "wilcoxon_p": 0.0012440059956825593
+   }
+  }
+ },
+ "fleiss_kappa": {
+  "image_only_clarity": 0.59,
+  "image_only_safety": 0.561,
+  "hybrid_clarity": 0.458,
+  "hybrid_safety": 0.603
+ },
+ "preference": {
+  "hybrid": 92,
+  "image_only": 26,
+  "tie": 32,
+  "ratio": 3.54,
+  "ratio_scene_bootstrap_ci95": [
+   2.0,
+   7.5
+  ],
+  "scenes_hybrid_more": 34,
+  "scenes_image_only_more": 9,
+  "scenes_tied": 7,
+  "scene_binomial_p": 0.00017015517460094998,
+  "per_rater": {
+   "R1": [
+    29,
+    6,
+    15
+   ],
+   "R2": [
+    33,
+    10,
+    7
+   ],
+   "R3": [
+    30,
+    10,
+    10
+   ]
+  }
+ }
+}

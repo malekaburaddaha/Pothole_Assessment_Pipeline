@@ -1,214 +1,106 @@
-# Pothole Detection and Assessment Project
+# Pothole Risk Assessment with Geometrically Grounded Vision Language Models
 
-This repository contains a comprehensive implementation of pothole detection and severity assessment using hybrid computer vision and vision-language model (VLM) techniques.
+Code, data and analyses for the paper by Abdalmalek Aburaddaha, Zaid A. El Shair,
+Ali Al-Bustami and Samir A. Rawashdeh (Department of Electrical and Computer
+Engineering, University of Michigan–Dearborn), under review at *IEEE Access*.
 
-## Overview
+The framework is an offline, five-stage pipeline that assesses already-detected
+potholes in dashcam images:
 
-This project implements a novel hybrid pipeline that combines deterministic computer vision metrics with VLM-based depth inference to create rich, multi-dimensional pothole assessments for autonomous vehicle applications. The system processes road imagery to detect, segment, characterize, and score potholes based on geometric properties, spatial positioning, and inferred depth characteristics.
+1. **Perspective transformation** of the dashcam frame (one fixed homography)
+2. **Zero-shot segmentation** with SAM ViT-H, prompted with each pothole box
+3. **Geometric features**: area, perimeter, circularity, aspect ratio, solidity, and position
+4. **Severity classification and risk scoring**: Gemini 2.5 Pro assigns a perceived severity class, combined with area and position into a composite risk score
+5. **Warning generation**: Gemini 2.5 Pro writes a driver advisory from the image and the structured assessment
 
-## Project Structure
+![Pipeline overview](docs/figures/paper1_pipeline_overview.png)
 
-### Core Detection Pipeline
+## Main results
 
-- **pothole_detection_project.py**: Main implementation of the pothole detection system
-- **Transformation_Pothole_Detection.py**: Handles perspective transformation and image preprocessing for pothole detection
-- **bboxes_categorization.py**: Tools for categorizing bounding boxes around detected potholes by distance and lateral position
-- **eval_metrics.py**: Evaluation metrics for measuring detection performance
-- **plot_gt_Vs_dt.py**: Visualization tools for comparing ground truth vs. detected potholes
-- **gt bbox to cropped bboxes.py**: Utility for cropping images based on ground truth bounding boxes
+| Finding | Result |
+|---|---|
+| Blind preference for grounded warnings (3 raters × 50 scenes) | 3.5 : 1; clarity +0.83 and safety +0.73 on a five-point scale |
+| Urgency shift relative to image-only warnings (1,119 scenes) | 26.7 % of scenes moved out of the high tier; critical-tier assignments up 109 % (Stuart–Maxwell p < 10⁻¹⁵) |
+| Six-arm prompt ablation (Gemini 2.5 Pro, 300 scenes) | the rubric alone adds 2 points of rubric consistency; the per-pothole measurements bring it to 99 % |
+| Segmentation against human-drawn masks | mean IoU 0.780 |
+| Severity agreement with a prediction-free human panel | κ = 0.139, against κ = 0.605 among the annotators |
+| Severity agreement with physically measured depth | κ = 0.098; the predicted classes preserve the depth ordering |
 
-### VLM Assessment Pipeline (`VLM_Code/`)
+The severity classes are perceived visual categories, not depth measurements. The
+generated maneuvers are advisory research outputs, not validated vehicle guidance.
 
-The VLM_Code directory contains the complete implementation of our hybrid assessment methodology:
-
-#### Configuration & Setup
-
-- **config.py**: Central configuration file containing all paths, VLM settings, depth category definitions, API parameters, and logging configurations. Manages adaptive dual-image strategy thresholds and checkpoint settings.
-
-- **requirements.txt**: Python dependencies including OpenAI API client, tqdm for progress tracking, and supporting libraries.
-
-- **.env.example**: Template for environment variables, primarily for storing OpenAI API credentials securely.
-
-#### Core Pipeline Scripts
-
-##### vlm_inference.py
-Main VLM depth inference engine implementing adaptive multi-image strategy:
-- Automatically determines whether to send full scene + crop (for small/distant potholes) or crop only (for near/clear potholes)
-- Constructs structured prompts combining pre-computed metrics with visual analysis instructions
-- Implements robust error handling with exponential backoff retry logic for API rate limits
-- Tracks token usage and cost in real-time with checkpoint saving every 100 potholes
-- Uses GPT-5 (or GPT-4o) with structured JSON output for reliable depth classification
-- **Output**: `vlm_depth_predictions.json` containing depth categories, confidence scores, and reasoning for each pothole
-
-##### data_fusion.py
-Merges VLM depth predictions with original geometric assessments:
-- Loads VLM inference results and original summary JSONs
-- Enriches each pothole record with depth category, confidence, reasoning, and metadata
-- Preserves all original CV-computed metrics while adding VLM-inferred attributes
-- Generates fusion statistics (success rate, missing predictions)
-- **Output**: Enriched assessment files in `final_assessments/` directory
-
-##### calculate_risk_scores.py
-Computes unified pothole risk scores (1-10 scale):
-- Implements weighted formula combining depth (40%), area (25%), distance (20%), and solidity (15%)
-- Depth scores: low=2.0, medium=5.5, high=9.0
-- Distance scores: Near=9.0, Medium=5.0, Far=2.0
-- Normalizes area and solidity to 0-10 scale
-- Produces risk distribution statistics (low/medium/high categories)
-- **Output**: Updated assessment files with `risk_score` field added to each pothole
-
-#### Orchestration
-
-##### run_pipeline.py
-Master execution script that runs the complete end-to-end pipeline:
-1. VLM depth inference (48-72 hours for full dataset)
-2. Data fusion (merges predictions with original data)
-3. Risk score calculation (generates final severity rankings)
-
-Includes comprehensive logging and error handling with progress tracking across all pipeline stages.
-
-## Methodology
-
-### Phase 1: Deterministic Feature Extraction
-Uses traditional computer vision to calculate objective, measurable properties:
-- **Geometric metrics**: Area, perimeter, circularity, aspect ratio, solidity
-- **Positional features**: Distance category (Near/Medium/Far), lateral position (in-path, in-lane)
-- **Segmentation**: SAM (Segment Anything Model) for precise pothole masks
-
-### Phase 2: VLM Depth Inference
-Addresses the "no ground truth depth" problem using vision-language models as weak supervisors:
-- **Adaptive strategy**: Sends full scene + crop for small/distant potholes; crop only for clear cases
-- **Structured prompting**: Combines pre-computed metrics with visual analysis instructions
-- **Depth classification**: Low (<2cm), Medium (2-5cm), High (>5cm)
-- **Validation**: Human-in-the-loop evaluation + comparison against RGB-D ground truth
-
-### Phase 3: Risk Synthesis
-Combines all metrics into actionable severity assessment:
-- **Weighted formula**: Scientifically justified weights based on vehicle damage literature
-- **Unified score**: Single 1-10 metric for prioritization and decision-making
-- **Distribution analysis**: Characterizes dataset severity profile
-
-## Usage
-
-### Setup
+## Repository layout
 
 ```
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+paper1_pipeline/
+├── main.py                    Stages 1-3: SAM segmentation and geometric features
+├── detection/                 perspective transformation, crops, distance/lateral bands
+├── vlm/                       Stages 4-5: Gemini clients, risk scoring, warning generation,
+│                              the published prompts, and the original analyses
+└── revision_analyses/         every analysis added in the revision, with its results
+data/
+├── sample/                    30 scenes with boxes and Stage 4 labels (runs out of the box)
+├── enpad/                     complete pipeline outputs for all scenes (no images)
+└── human_studies/             anonymized human annotations and ratings
+docs/figures/                  figures used in this README
+scripts/download_models.sh     SAM ViT-H weights
+repo_config.py                 path resolution (set POTHOLE_DATA_ROOT for the full corpus)
+```
 
-# Install dependencies
-cd VLM_Code
+## Installation
+
+```bash
 pip install -r requirements.txt
-
-# Configure API key
-cp .env.example .env
-# Edit .env and add your OpenAI API key
+bash scripts/download_models.sh            # SAM ViT-H
+echo "GOOGLE_API_KEY=..." > paper1_pipeline/vlm/.env   # needed for Stages 4-5 only
 ```
 
-### Running the Pipeline
+## Reproducing the reported tables
 
-**Complete end-to-end execution:**
-```
-python VLM_Code/run_pipeline.py
-```
+These two scripts run from the released data alone, with no API key or GPU:
 
-**Individual stages:**
-```
-# Stage 1: VLM depth inference (takes 48-72 hours)
-python VLM_Code/vlm_inference.py
-
-# Stage 2: Data fusion
-python VLM_Code/data_fusion.py
-
-# Stage 3: Risk score calculation
-python VLM_Code/calculate_risk_scores.py
+```bash
+python paper1_pipeline/revision_analyses/panel_analysis.py     # Tables 6, 7, 8, 16
+python paper1_pipeline/revision_analyses/warning_analysis.py   # Tables 9-13
 ```
 
-### Monitoring Progress
+The other revision analyses (validation against measured depth, the prompt ablation,
+segmentation IoU, run-to-run variability) are listed with their inputs and results in
+[`paper1_pipeline/revision_analyses/README.md`](paper1_pipeline/revision_analyses/README.md).
 
-```
-# View real-time logs
-tail -f data/vlm_outputs/inference.log
+## Running the pipeline
 
-# Check cost tracking
-cat data/vlm_outputs/cost_tracking.json
-
-# View checkpoint progress
-ls -lh data/vlm_outputs/vlm_depth_predictions.json
+```bash
+python paper1_pipeline/main.py               # Stages 1-3 on the bundled sample
+python paper1_pipeline/vlm/Run_Pipeline.py   # Stages 4-5 (Gemini API)
 ```
 
-## Output Format
+The full 1,119-scene run took 8.2 h of wall-clock time and cost about $117.50 in API
+fees ($0.105 per scene). The complete outputs are in `data/enpad/`, so no analysis
+needs a re-run: hosted models are not guaranteed to reproduce their earlier outputs.
 
-### Final Assessment JSON Structure
+## Data
 
-Each scene produces an enriched JSON with complete per-pothole assessment:
-
-```
-{
-  "image_name": "G0010121.JPG",
-  "results": [
-    {
-      "bbox_id": 0,
-      "gt_bbox": ,
-      "mask_metrics": {
-        "area": 7850.0,
-        "perimeter": 342.5,
-        "circularity": 0.81,
-        "aspect_ratio": 1.12,
-        "solidity": 0.87
-      },
-      "Positional_feature": {
-        "Distance_Category": "Near",
-        "Lateral_Position": "in_path_left"
-      },
-      "vlm_depth_inference": {
-        "depth_category": "high",
-        "confidence": "high",
-        "reasoning": "Deep shadows and sharp edge definition indicate significant depth",
-        "used_dual_image": false,
-        "inference_timestamp": "2025-11-06T10:45:23"
-      },
-      "risk_score": 8.45
-    }
-  ]
-}
-```
-
-## Dataset
-
-This pipeline processes the **Road Pothole Images** dataset (11,497 images, 7,588 labeled potholes) and produces the **DPAD (Dearborn Pothole Assessment Dataset)** with 10+ attributes per pothole including VLM-inferred depth and unified risk scores.
-
-## Cost Estimation
-
-- **VLM inference**: ~$150-220 for 8,000-10,000 potholes using GPT-5/GPT-4o
-- **Processing time**: 48-72 hours for complete dataset (API rate limits)
-- **Checkpoint system**: Automatic resume capability if interrupted
-
-## Research Applications
-
-This codebase supports research on:
-1. **Hybrid CV + VLM methodologies** for perception tasks lacking ground truth
-2. **Weak supervision** using vision-language models as annotators
-3. **Multi-modal risk assessment** for autonomous vehicle decision-making
-4. **Dataset creation** for pothole severity benchmarking
-
-## Citation
-
-If you use this code or methodology in your research, please cite:
-```
-[Paper citation to be added upon publication]
-```
+See [`data/README.md`](data/README.md). The images come from the public dataset of
+Nienaber, Booysen and Kroon (2015) and remain subject to its terms.
 
 ## License
 
-[Your license here]
+Code is released under the MIT License (`LICENSE`). Annotations, pipeline outputs and
+human-study data are released under CC BY 4.0 (`DATA_LICENSE.md`).
+
+## Citation
+
+```bibtex
+@article{aburaddaha_pothole_vlm,
+  author  = {Aburaddaha, Abdalmalek and El Shair, Zaid A. and Al-Bustami, Ali and Rawashdeh, Samir A.},
+  title   = {Pothole Risk Assessment with Geometrically Grounded Vision Language Models},
+  journal = {IEEE Access},
+  note    = {under review},
+  year    = {2026}
+}
+```
 
 ## Contact
 
-[Your contact information]
-
----
-
-**Note**: The VLM pipeline requires an OpenAI API key and processes images asynchronously. Estimated cost for full dataset processing is $150-220 USD. Checkpoint files are saved every 100 potholes to enable resume functionality.
-```
+Abdalmalek Aburaddaha, abdmalek@umich.edu

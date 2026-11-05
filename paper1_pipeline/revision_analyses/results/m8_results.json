@@ -1,0 +1,29 @@
+{
+ "M8b_segmentation_vs_human_masks": {
+  "n_masks": 126,
+  "true_iou": {
+   "mean": 0.7804,
+   "median": 0.8093,
+   "p10": 0.6404,
+   "pct_above_0.5": 96.03,
+   "pct_above_0.75": 67.46
+  },
+  "sam_predicted_iou": {
+   "mean": 0.9533,
+   "median": 0.966
+  },
+  "mean_overestimate_predicted_minus_true": 0.1729,
+  "pearson_r_predicted_vs_true": 0.5686,
+  "note": "SAM's self-reported IoU is not a substitute for measured IoU; reported here on independent human polygon masks."
+ },
+ "M8c_monocular_depth_vs_sensor": {
+  "model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "n_potholes": 95,
+  "sensor_step_mm_median": 17.0,
+  "model_step_z_median": -0.196,
+  "model_step_within_1_ring_sd_pct": 85.26,
+  "pearson_r_model_vs_sensor_step": 0.0048,
+  "spearman_r_model_step_vs_metric_depth": -0.1075,
+  "interpretation": "If the model recovered pothole geometry, its interior-vs-road step would scale with the sensor step. A near-zero correlation and a step smaller than local surface noise quantify the qualitative Figure-4 observation."
+ }
+}

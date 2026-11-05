@@ -1,0 +1,1769 @@
+{
+ "G0011586_bbox0": {
+  "scene": "G0011586",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The defect lacks deep, dark shadows, and the interior surface texture is clearly visible and illuminated. The edges are not sharp, suggesting a shallow depression rather than a deep pothole. The overall lighting contrast is minimal.",
+  "geometric_features": {
+   "area": 13811,
+   "perimeter": 553.972650051117,
+   "circularity": 0.5655335072598078,
+   "aspect_ratio": 2.2346938775510203,
+   "solidity": 0.9254221388367729
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0011586_bbox1": {
+  "scene": "G0011586",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image shows very low contrast between the feature and the surrounding road surface. There are no significant shadows cast within the depression, and its edges are soft and poorly defined. These visual cues are characteristic of a shallow surface depression or wear, not a deep pothole.",
+  "geometric_features": {
+   "area": 5933,
+   "perimeter": 294.00714099407196,
+   "circularity": 0.862518570710001,
+   "aspect_ratio": 1.4722222222222223,
+   "solidity": 1.0108186387256155
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0011586_bbox2": {
+  "scene": "G0011586",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image shows minimal shadowing within the pothole. There is very low contrast between the interior and the surrounding road surface, and the edges are not sharp or well-defined. This indicates a shallow surface depression rather than a significant pothole.",
+  "geometric_features": {
+   "area": 8045,
+   "perimeter": 406.93607246875763,
+   "circularity": 0.6104969998993995,
+   "aspect_ratio": 2.6984126984126986,
+   "solidity": 0.9986965427347775
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0011593_bbox0": {
+  "scene": "G0011593",
+  "bbox_id": 0,
+  "depth_category": "medium",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits significant darkness and shadow within its interior, obscuring the bottom surface texture. The upper edge is well-defined and sharp, creating a clear contrast with the road surface, which is indicative of a moderate depth rather than a shallow depression.",
+  "geometric_features": {
+   "area": 57667,
+   "perimeter": 1097.3006377220154,
+   "circularity": 0.6018468053446399,
+   "aspect_ratio": 1.3702290076335877,
+   "solidity": 0.9063860553573393
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0011593_bbox1": {
+  "scene": "G0011593",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits very low contrast with the surrounding road surface. There are no significant shadows, and the edges are poorly defined and not sharp. The internal surface texture is clearly visible, all of which indicates a shallow depth.",
+  "geometric_features": {
+   "area": 14828,
+   "perimeter": 477.88938987255096,
+   "circularity": 0.8159013741726092,
+   "aspect_ratio": 1.5132743362831858,
+   "solidity": 1.0033834077683041
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0011593_bbox2": {
+  "scene": "G0011593",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The image shows very low contrast between the feature and the surrounding road surface. There are no deep, dark shadows, and the edges are not sharply defined, which is characteristic of a shallow surface depression rather than a significant pothole.",
+  "geometric_features": {
+   "area": 9501,
+   "perimeter": 406.91882848739624,
+   "circularity": 0.7210470611920518,
+   "aspect_ratio": 1.4019607843137254,
+   "solidity": 0.9815589648225631
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0011621_bbox0": {
+  "scene": "G0011621",
+  "bbox_id": 0,
+  "depth_category": "medium",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole displays sharp, well-defined edges and significant shadowing within its interior. The high contrast between the dark, shadowed bottom and the surrounding road surface suggests a depth greater than a shallow depression, consistent with the medium category.",
+  "geometric_features": {
+   "area": 16364,
+   "perimeter": 551.7888845205307,
+   "circularity": 0.6753881549130941,
+   "aspect_ratio": 2.0093457943925235,
+   "solidity": 0.9929611650485437
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0011939_bbox0": {
+  "scene": "G0011939",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image shows very little shadow and low contrast between the feature's interior and the surrounding road surface. The edges are not sharp or well-defined, and the internal texture is clearly visible, which is consistent with a shallow surface depression rather than a deep pothole.",
+  "geometric_features": {
+   "area": 3942,
+   "perimeter": 269.76450049877167,
+   "circularity": 0.6807017815128918,
+   "aspect_ratio": 1.9464285714285714,
+   "solidity": 0.9940738872777708
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0011939_bbox1": {
+  "scene": "G0011939",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry, but there is a lack of sharp, defined edges and deep, dark shadows. This suggests a shallow surface depression or delamination rather than a pothole with significant vertical depth. Confidence is low due to the very poor image quality.",
+  "geometric_features": {
+   "area": 1134,
+   "perimeter": 140.6690467596054,
+   "circularity": 0.7201547500966811,
+   "aspect_ratio": 2.28,
+   "solidity": 1.0318471337579618
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0011939_bbox2": {
+  "scene": "G0011939",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely blurry and lacks sufficient detail to assess depth cues. Based on the full context image, the area appears to be surface degradation with no discernible sharp edges or deep shadows, which is indicative of a shallow depression.",
+  "geometric_features": {
+   "area": 582,
+   "perimeter": 95.69848418235779,
+   "circularity": 0.798587910019377,
+   "aspect_ratio": 1.9473684210526316,
+   "solidity": 1.045822102425876
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0011939_bbox3": {
+  "scene": "G0011939",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is very blurry, but it lacks significant shadows, sharp edges, or high contrast between the interior and the surrounding road surface. This suggests a shallow surface depression or raveling rather than a deep pothole.",
+  "geometric_features": {
+   "area": 1571,
+   "perimeter": 168.81118214130402,
+   "circularity": 0.692761313186578,
+   "aspect_ratio": 2.09375,
+   "solidity": 1.0168284789644013
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0011939_bbox4": {
+  "scene": "G0011939",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely blurry and low-resolution, preventing a detailed analysis. There are no discernible sharp edges or deep, well-defined shadows that would indicate significant depth. The visual information is consistent with a shallow surface depression or discoloration rather than a medium or high-depth pothole.",
+  "geometric_features": {
+   "area": 574,
+   "perimeter": 106.18376553058624,
+   "circularity": 0.6397429543910343,
+   "aspect_ratio": 1.4230769230769231,
+   "solidity": 0.9295546558704454
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0027413_bbox0": {
+  "scene": "G0027413",
+  "bbox_id": 0,
+  "depth_category": "high",
+  "depth_confidence": "high",
+  "depth_reasoning": "The presence of a very dark, sharply defined shadow along the upper edge indicates a significant and abrupt drop from the road surface. The high contrast between the road surface and the shadowed interior suggests considerable depth, characteristic of a hazardous pothole.",
+  "geometric_features": {
+   "area": 14029,
+   "perimeter": 514.9432141780853,
+   "circularity": 0.6648411626483098,
+   "aspect_ratio": 1.7837837837837838,
+   "solidity": 0.9394943914280931
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0027413_bbox1": {
+  "scene": "G0027413",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect exhibits minimal shadowing and very low contrast with the surrounding road surface. The edges are not sharply defined, and the internal surface texture is clearly visible, all of which are characteristic of a shallow surface depression.",
+  "geometric_features": {
+   "area": 15477,
+   "perimeter": 474.5756815671921,
+   "circularity": 0.8635464166173634,
+   "aspect_ratio": 1.014388489208633,
+   "solidity": 0.9956256030878096
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0027413_bbox2": {
+  "scene": "G0027413",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image shows minimal shadow and low contrast with the surrounding road surface. The edges are indistinct, which is characteristic of a shallow surface depression or wear rather than a pothole with significant depth.",
+  "geometric_features": {
+   "area": 3866,
+   "perimeter": 367.96551036834717,
+   "circularity": 0.35880417345376814,
+   "aspect_ratio": 3.659090909090909,
+   "solidity": 0.8499505331427943
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0027800_bbox0": {
+  "scene": "G0027800",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely low resolution and blurry, which severely limits the analysis. Based on the available visual information, the edges of the defect appear worn and lack the sharp definition typical of a deeper pothole. Furthermore, there are no strong, dark shadows cast within the depression, suggesting it is shallow. The feature resembles surface spalling or a wide, shallow crack rather than a deep hole.",
+  "geometric_features": {
+   "area": 10649,
+   "perimeter": 611.8305146694183,
+   "circularity": 0.3574838482094344,
+   "aspect_ratio": 3.1549295774647885,
+   "solidity": 0.7645200660492497
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0027800_bbox1": {
+  "scene": "G0027800",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely low resolution and blurry, making a definitive assessment difficult. There are no sharp, defined edges or deep, dark shadows visible. The visual evidence is more consistent with shallow surface spalling or a minor depression rather than a pothole of significant depth.",
+  "geometric_features": {
+   "area": 2079,
+   "perimeter": 189.7817441225052,
+   "circularity": 0.725363145891665,
+   "aspect_ratio": 2.2285714285714286,
+   "solidity": 1.0196174595389897
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0027800_bbox2": {
+  "scene": "G0027800",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely low-resolution and blurry, making a definitive analysis difficult. However, there are no sharp, well-defined edges or deep, dark shadows that would indicate significant depth. The feature appears as a soft-edged, dark patch, which is more characteristic of a shallow surface depression or delamination rather than a medium or high-depth pothole.",
+  "geometric_features": {
+   "area": 3369,
+   "perimeter": 233.72286927700043,
+   "circularity": 0.7750120526364437,
+   "aspect_ratio": 1.1846153846153846,
+   "solidity": 0.9954202984192643
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0027850_bbox0": {
+  "scene": "G0027850",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is extremely blurry and lacks distinct features. However, there are no visible sharp edges or deep, dark shadows. The contrast between the defect and the surrounding road surface is minimal, which is indicative of a very shallow surface depression rather than a pothole with significant depth.",
+  "geometric_features": {
+   "area": 799,
+   "perimeter": 119.01219248771667,
+   "circularity": 0.7088816449526694,
+   "aspect_ratio": 2.1818181818181817,
+   "solidity": 1.0263326910725754
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0027891_bbox0": {
+  "scene": "G0027891",
+  "bbox_id": 0,
+  "depth_category": "high",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole interior is a very dark, uniform shadow with no visible surface texture at the bottom. This high contrast with the surrounding road surface indicates a significant depth that prevents light from illuminating its base.",
+  "geometric_features": {
+   "area": 6638,
+   "perimeter": 315.03657829761505,
+   "circularity": 0.8404756746473484,
+   "aspect_ratio": 1.2560975609756098,
+   "solidity": 0.9913381123058542
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0027891_bbox1": {
+  "scene": "G0027891",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The pothole exhibits soft, undefined edges and lacks the sharp, dark shadows characteristic of a deep hole. The low image resolution and blurriness significantly limit assessment confidence, but the visible evidence points to a shallow surface depression.",
+  "geometric_features": {
+   "area": 1804,
+   "perimeter": 169.15432786941528,
+   "circularity": 0.792282693848095,
+   "aspect_ratio": 1.5128205128205128,
+   "solidity": 1.0126298063429695
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0027891_bbox2": {
+  "scene": "G0027891",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole exhibits indistinct, blurry edges and lacks deep, dark shadows. The contrast between the pothole interior and the surrounding road surface is moderate, which is characteristic of a shallow surface depression. The low resolution of the cropped image reduces confidence.",
+  "geometric_features": {
+   "area": 1354,
+   "perimeter": 181.7401144504547,
+   "circularity": 0.5151419693902649,
+   "aspect_ratio": 2.740740740740741,
+   "solidity": 0.9518453427065027
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0028260_bbox0": {
+  "scene": "G0028260",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image quality is very poor, making a definitive assessment difficult. However, the visible edges appear soft and lack sharpness. There are no distinct, dark internal shadows that would suggest significant depth; the coloration seems consistent with the ambient lighting and road surface texture, indicating a shallow depression.",
+  "geometric_features": {
+   "area": 1367,
+   "perimeter": 174.42640602588654,
+   "circularity": 0.5646169526130349,
+   "aspect_ratio": 3.0416666666666665,
+   "solidity": 0.9816876122082585
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0028764_bbox0": {
+  "scene": "G0028764",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image shows no discernible shadows, sharp edges, or significant lighting contrast. The feature appears as a flat, blurry discoloration, which is consistent with a very shallow surface depression rather than a pothole of medium or high depth.",
+  "geometric_features": {
+   "area": 2624,
+   "perimeter": 197.8233746290207,
+   "circularity": 0.8425942332314279,
+   "aspect_ratio": 1.2592592592592593,
+   "solidity": 1.0123456790123457
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0028952_bbox0": {
+  "scene": "G0028952",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image shows very low contrast between the defect and the surrounding road surface. There are no discernible sharp edges or deep shadows, which indicates a shallow surface depression rather than a pothole with significant depth. Confidence is medium due to the low resolution and blurriness of the cropped image.",
+  "geometric_features": {
+   "area": 1353,
+   "perimeter": 158.08326029777527,
+   "circularity": 0.6803554878646505,
+   "aspect_ratio": 2.25,
+   "solidity": 1.0081967213114753
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0029156_bbox0": {
+  "scene": "G0029156",
+  "bbox_id": 0,
+  "depth_category": "high",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole exhibits a very dark interior shadow with high contrast against the sunlit road surface. The upper edge appears sharp and well-defined, suggesting a significant vertical drop rather than a shallow depression. The texture at the bottom of the pothole is completely obscured by the shadow, which is characteristic of a deep cavity.",
+  "geometric_features": {
+   "area": 3945,
+   "perimeter": 311.33809328079224,
+   "circularity": 0.5114372413329547,
+   "aspect_ratio": 3.1951219512195124,
+   "solidity": 0.9564795732816099
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0029156_bbox1": {
+  "scene": "G0029156",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry, making a definitive assessment difficult. However, there is a lack of sharp, defined edges and no deep, dark shadow, which would be expected in a medium or high depth pothole under the bright ambient lighting. The feature appears to be a shallow surface depression or discoloration.",
+  "geometric_features": {
+   "area": 997,
+   "perimeter": 136.08326029777527,
+   "circularity": 0.676543321289393,
+   "aspect_ratio": 2.076923076923077,
+   "solidity": 1.003522898842476
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0029446_bbox0": {
+  "scene": "G0029446",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The feature displays soft, worn edges rather than sharp, defined ones. There is a lack of significant shadow or high contrast between the interior and the surrounding road surface, suggesting a shallow depression.",
+  "geometric_features": {
+   "area": 2181,
+   "perimeter": 222.06601536273956,
+   "circularity": 0.5557779721437536,
+   "aspect_ratio": 1.872340425531915,
+   "solidity": 0.9578392621870883
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0032516_bbox0": {
+  "scene": "G0032516",
+  "bbox_id": 0,
+  "depth_category": "medium",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits a sharp, well-defined edge on the right side which casts a dark, distinct shadow. This indicates a significant vertical drop, ruling out a shallow depression. The high contrast between the road surface and the shadowed interior is consistent with a moderate depth.",
+  "geometric_features": {
+   "area": 20491,
+   "perimeter": 582.7005727291107,
+   "circularity": 0.7583717162067831,
+   "aspect_ratio": 1.9083333333333334,
+   "solidity": 0.984647173301939
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0032516_bbox1": {
+  "scene": "G0032516",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect shows very little shadow and low contrast with the surrounding road surface. The edges are not sharply defined, and the texture inside the depression is clearly visible, indicating a shallow depth.",
+  "geometric_features": {
+   "area": 13172,
+   "perimeter": 525.0609620809555,
+   "circularity": 0.6004019942251,
+   "aspect_ratio": 2.265957446808511,
+   "solidity": 0.9626543886574581
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0032516_bbox2": {
+  "scene": "G0032516",
+  "bbox_id": 2,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole exhibits moderate shadowing and contrast with the road surface, but the interior is not completely black, suggesting it is not extremely deep. The edges appear worn and are not sharply defined, which is inconsistent with a high-depth pothole. The low resolution of the cropped image limits confidence.",
+  "geometric_features": {
+   "area": 2955,
+   "perimeter": 209.33809328079224,
+   "circularity": 0.8473655838114511,
+   "aspect_ratio": 1.4705882352941178,
+   "solidity": 1.0156384258463653
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0032516_bbox3": {
+  "scene": "G0032516",
+  "bbox_id": 3,
+  "depth_category": "high",
+  "depth_confidence": "high",
+  "depth_reasoning": "The presence of a deep, dark shadow and a sharply defined edge creates high contrast with the surrounding road surface. These cues indicate a significant vertical drop, consistent with a high-depth category.",
+  "geometric_features": {
+   "area": 5682,
+   "perimeter": 302.0071414709091,
+   "circularity": 0.7828465968865356,
+   "aspect_ratio": 1.7164179104477613,
+   "solidity": 1.0090570058604156
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0043318_bbox0": {
+  "scene": "G0043318",
+  "bbox_id": 0,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "A distinct shadow is cast along the top edge, indicating a depth greater than a shallow depression. However, the aggregate at the bottom of the pothole is still visible and partially illuminated, suggesting the depth is not severe enough to be classified as 'high'.",
+  "geometric_features": {
+   "area": 7091,
+   "perimeter": 374.3502873182297,
+   "circularity": 0.6358592710220925,
+   "aspect_ratio": 2.7241379310344827,
+   "solidity": 1.0063151919392606
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0043318_bbox1": {
+  "scene": "G0043318",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The analyzed region lacks sharp, defined edges and deep, dark shadows. The interior surface is well-illuminated and its texture is visible, which is characteristic of a shallow surface depression or delamination rather than a deep pothole.",
+  "geometric_features": {
+   "area": 3098,
+   "perimeter": 252.30865585803986,
+   "circularity": 0.6115429692194968,
+   "aspect_ratio": 2.3863636363636362,
+   "solidity": 0.99278961704855
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0043318_bbox2": {
+  "scene": "G0043318",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image shows very little shadow or contrast, indicating a lack of significant depth. The edges are not sharp or well-defined, and the surface texture within the defect is visible. This is consistent with shallow surface wear rather than a deep pothole.",
+  "geometric_features": {
+   "area": 1321,
+   "perimeter": 146.22539567947388,
+   "circularity": 0.776367007273686,
+   "aspect_ratio": 1.8387096774193548,
+   "solidity": 1.0364848960376618
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0043318_bbox3": {
+  "scene": "G0043318",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry and low-resolution, preventing a detailed analysis. However, there are no visible sharp edges or deep, well-defined shadows. The appearance is consistent with shallow surface wear or a minor depression rather than a significant pothole.",
+  "geometric_features": {
+   "area": 3739,
+   "perimeter": 269.5807341337204,
+   "circularity": 0.6465284282669393,
+   "aspect_ratio": 2.4130434782608696,
+   "solidity": 1.0141036072687821
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0043318_bbox4": {
+  "scene": "G0043318",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The visual evidence in the cropped image shows a lack of significant shadows and poorly defined edges. The contrast between the feature's interior and the surrounding road surface is minimal, indicating a very shallow surface depression or wear rather than a pothole with measurable depth.",
+  "geometric_features": {
+   "area": 1713,
+   "perimeter": 206.66904664039612,
+   "circularity": 0.5039835424465249,
+   "aspect_ratio": 4.181818181818182,
+   "solidity": 1.0199464126228044
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0043318_bbox5": {
+  "scene": "G0043318",
+  "bbox_id": 5,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits very shallow and soft shadows, indicating a lack of significant depth. The edges are poorly defined, characteristic of surface wear rather than a deep cavity. The bottom surface is well-illuminated with visible texture, further supporting a 'low' depth classification.",
+  "geometric_features": {
+   "area": 1153,
+   "perimeter": 177.3969682455063,
+   "circularity": 0.4604121592251827,
+   "aspect_ratio": 3.2916666666666665,
+   "solidity": 1.0185512367491165
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0052405_bbox0": {
+  "scene": "G0052405",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely blurry and lacks sufficient detail for a confident analysis. There are no discernible sharp edges, deep shadows, or significant contrast between the feature and the surrounding road surface. The visual evidence is insufficient to classify it as anything other than a shallow surface irregularity.",
+  "geometric_features": {
+   "area": 2101,
+   "perimeter": 196.3675309419632,
+   "circularity": 0.6846940556669202,
+   "aspect_ratio": 2.135135135135135,
+   "solidity": 1.0096107640557423
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0052405_bbox1": {
+  "scene": "G0052405",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry and low-resolution, making a definitive assessment difficult. However, there are no discernible shadows, sharp edges, or significant contrast variations that would indicate a medium or high depth pothole. The visual information available suggests a very shallow surface depression or discoloration.",
+  "geometric_features": {
+   "area": 1282,
+   "perimeter": 144.81118321418762,
+   "circularity": 0.7682342849911179,
+   "aspect_ratio": 1.9,
+   "solidity": 1.0260104041616647
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0052405_bbox2": {
+  "scene": "G0052405",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry and lacks sufficient detail for a confident assessment. There are no discernible sharp edges, deep shadows, or significant contrast to indicate medium or high depth. The feature appears as a minor, low-contrast surface irregularity.",
+  "geometric_features": {
+   "area": 914,
+   "perimeter": 141.11269795894623,
+   "circularity": 0.576798163801504,
+   "aspect_ratio": 3.388888888888889,
+   "solidity": 1.0505747126436782
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0052405_bbox3": {
+  "scene": "G0052405",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely blurry and lacks sufficient detail for a confident assessment. There are no discernible sharp edges or deep, dark shadows that would indicate significant depth. The feature appears as a slight discoloration with minimal contrast against the surrounding road surface, which is most consistent with a shallow depression.",
+  "geometric_features": {
+   "area": 654,
+   "perimeter": 96.4264063835144,
+   "circularity": 0.8838847659818644,
+   "aspect_ratio": 1.4583333333333333,
+   "solidity": 1.0464
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0064486_bbox0": {
+  "scene": "G0064486",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The image shows very shallow indentations with minimal shadowing and low contrast. The edges are soft and poorly defined, and the texture at the bottom of the depression is clearly visible, all of which are characteristic of a low-depth surface irregularity.",
+  "geometric_features": {
+   "area": 38274,
+   "perimeter": 830.7493423223495,
+   "circularity": 0.6969051987838963,
+   "aspect_ratio": 1.2420091324200913,
+   "solidity": 0.9263387184607007
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0064486_bbox1": {
+  "scene": "G0064486",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry and lacks clear visual cues. However, there are no discernible sharp edges or deep, dark shadows. The low contrast between the feature and the surrounding surface suggests a very shallow depression, consistent with the 'low' depth category.",
+  "geometric_features": {
+   "area": 1664,
+   "perimeter": 178.9116871356964,
+   "circularity": 0.653259544481011,
+   "aspect_ratio": 2.413793103448276,
+   "solidity": 0.9892984542211652
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0064486_bbox2": {
+  "scene": "G0064486",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is extremely blurry, but there are no discernible sharp edges or deep, dark shadows. The contrast with the surrounding road surface is minimal, which is characteristic of a shallow surface depression or wear rather than a pothole with significant depth.",
+  "geometric_features": {
+   "area": 884,
+   "perimeter": 136.42640602588654,
+   "circularity": 0.5968500743509487,
+   "aspect_ratio": 3.1578947368421053,
+   "solidity": 1.041838538597525
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0066555_bbox0": {
+  "scene": "G0066555",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The interior surface and aggregate texture of the depression are clearly visible and well-illuminated. There is a lack of significant, dark shadowing, and the edges appear crumbled rather than forming a sharp, deep drop. This indicates a shallow surface spalling or depression.",
+  "geometric_features": {
+   "area": 9325,
+   "perimeter": 383.9066343307495,
+   "circularity": 0.7950738504134924,
+   "aspect_ratio": 1.3936170212765957,
+   "solidity": 1.0011810178226326
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0066555_bbox1": {
+  "scene": "G0066555",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The interior surface and texture of the pothole are clearly visible, and there is a lack of deep, dark shadows. This indicates a shallow depression rather than a deep hole. The low image quality reduces confidence from high to medium.",
+  "geometric_features": {
+   "area": 20779,
+   "perimeter": 613.8549020290375,
+   "circularity": 0.6929518370984379,
+   "aspect_ratio": 0.6894977168949772,
+   "solidity": 0.9782726395329677
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": false
+ },
+ "G0066555_bbox2": {
+  "scene": "G0066555",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The interior of the pothole is well-lit, with very faint and soft shadows. The surface texture at the bottom of the depression is clearly visible and similar to the surrounding road. The edges are not sharp, and there is minimal contrast, all of which indicate a shallow surface depression.",
+  "geometric_features": {
+   "area": 3705,
+   "perimeter": 246.59292709827423,
+   "circularity": 0.7656615615079535,
+   "aspect_ratio": 1.5666666666666667,
+   "solidity": 1.0061099796334012
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0066555_bbox3": {
+  "scene": "G0066555",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image shows very low contrast between the interior of the depression and the surrounding road surface. There are no sharp edges or dark shadows present, which would indicate significant depth. The visual cues strongly suggest a shallow surface depression.",
+  "geometric_features": {
+   "area": 2917,
+   "perimeter": 212.3675309419632,
+   "circularity": 0.8127744773753027,
+   "aspect_ratio": 1.6956521739130435,
+   "solidity": 1.014432272648235
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0066555_bbox4": {
+  "scene": "G0066555",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image displays very low contrast, a lack of discernible shadows, and soft, undefined edges. These visual cues strongly indicate a shallow surface depression rather than a pothole with significant depth.",
+  "geometric_features": {
+   "area": 1827,
+   "perimeter": 181.740114569664,
+   "circularity": 0.6950992443436728,
+   "aspect_ratio": 2.3548387096774195,
+   "solidity": 1.0164116828929068
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0066555_bbox5": {
+  "scene": "G0066555",
+  "bbox_id": 5,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry, making detailed analysis difficult. However, the visible shadow is very faint and diffuse, and the contrast between the depression and the road surface is minimal. This lack of strong shadow or sharp edges suggests a shallow surface depression rather than a significant pothole.",
+  "geometric_features": {
+   "area": 724,
+   "perimeter": 126.42640602588654,
+   "circularity": 0.5692104252594561,
+   "aspect_ratio": 2.7,
+   "solidity": 1.021877205363444
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0066586_bbox0": {
+  "scene": "G0066586",
+  "bbox_id": 0,
+  "depth_category": "high",
+  "depth_confidence": "high",
+  "depth_reasoning": "The image displays a very dark, well-defined shadow on the left edge of the pothole. This sharp, high-contrast shadow indicates a significant vertical drop from the road surface, obscuring the bottom texture and suggesting a depth greater than 5cm.",
+  "geometric_features": {
+   "area": 27169,
+   "perimeter": 697.6538902521133,
+   "circularity": 0.7014609147437271,
+   "aspect_ratio": 1.2406417112299466,
+   "solidity": 0.9726140187585022
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0066586_bbox1": {
+  "scene": "G0066586",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is extremely blurry and lacks clear visual features. However, there is no discernible shadow, no sharp edge definition, and minimal contrast with the surrounding road surface. This absence of depth indicators suggests a very shallow surface depression.",
+  "geometric_features": {
+   "area": 637,
+   "perimeter": 99.35533833503723,
+   "circularity": 0.8108992209199385,
+   "aspect_ratio": 1.95,
+   "solidity": 1.0520231213872833
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0066586_bbox2": {
+  "scene": "G0066586",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image is extremely blurry, but it lacks any discernible sharp edges or deep shadows. The contrast between the feature and the surrounding road surface is minimal, which is characteristic of a very shallow surface depression rather than a pothole with significant depth.",
+  "geometric_features": {
+   "area": 821,
+   "perimeter": 118.66904675960541,
+   "circularity": 0.7326188919225988,
+   "aspect_ratio": 2.0869565217391304,
+   "solidity": 1.0340050377833754
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0066650_bbox0": {
+  "scene": "G0066650",
+  "bbox_id": 0,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole displays moderate shadowing, particularly on the left and upper edges, suggesting a depth greater than a shallow surface flaw. The texture at the bottom is visible but obscured in some areas by shadow and debris, consistent with a medium depth classification rather than a deep, fully obscured hole.",
+  "geometric_features": {
+   "area": 18855,
+   "perimeter": 540.5411916971207,
+   "circularity": 0.8109214928906514,
+   "aspect_ratio": 1.1464968152866242,
+   "solidity": 0.9765382224984462
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0066650_bbox1": {
+  "scene": "G0066650",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect shows very little shadow and low contrast between its interior and the surrounding road surface. The edges are poorly defined and not sharp, indicating a shallow surface depression rather than a significant hole.",
+  "geometric_features": {
+   "area": 7854,
+   "perimeter": 346.391917347908,
+   "circularity": 0.8225555964636394,
+   "aspect_ratio": 1.3111111111111111,
+   "solidity": 1.000445831475702
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0066650_bbox2": {
+  "scene": "G0066650",
+  "bbox_id": 2,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole interior is well-lit with only slight shadowing, and the bottom surface texture is clearly visible. This indicates a lack of significant depth. However, the edges are clearly broken and crumbled, suggesting more than a shallow surface depression. The overall visual evidence is most consistent with a moderate depth pothole.",
+  "geometric_features": {
+   "area": 4264,
+   "perimeter": 261.52185821533203,
+   "circularity": 0.7834496181310471,
+   "aspect_ratio": 0.927710843373494,
+   "solidity": 1.0025864095932282
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0066650_bbox3": {
+  "scene": "G0066650",
+  "bbox_id": 3,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole displays moderate shadowing and contrast, indicating it is not shallow. However, the edges are not sharply defined and the interior is not completely dark, which suggests it is not in the high-depth category. The low resolution of the cropped image reduces confidence in the assessment.",
+  "geometric_features": {
+   "area": 4621,
+   "perimeter": 282.149276137352,
+   "circularity": 0.7294372737823331,
+   "aspect_ratio": 0.8617021276595744,
+   "solidity": 0.9768523411901491
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0066650_bbox4": {
+  "scene": "G0066650",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The feature shows minimal shadowing and very low contrast with the surrounding road surface. The edges are poorly defined and blend into the pavement, and the internal texture is clearly visible, all of which are characteristic of a shallow surface depression.",
+  "geometric_features": {
+   "area": 6633,
+   "perimeter": 419.73001074790955,
+   "circularity": 0.4731292700884131,
+   "aspect_ratio": 0.639751552795031,
+   "solidity": 0.9241379310344827
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0066912_bbox0": {
+  "scene": "G0066912",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The feature shows minimal shadow and very low contrast between its interior and the surrounding road surface. The edges are not sharp, and the texture at the bottom is clearly visible, indicating a shallow surface depression rather than a significant pothole.",
+  "geometric_features": {
+   "area": 10684,
+   "perimeter": 390.61731219291687,
+   "circularity": 0.8799150961409195,
+   "aspect_ratio": 0.944,
+   "solidity": 0.9958057600894771
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0067037_bbox0": {
+  "scene": "G0067037",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The image shows a depression with very soft, undefined edges and minimal shadow. The contrast between the interior of the feature and the surrounding road surface is low, and the bottom texture is still visible, all of which are characteristic of a shallow surface depression.",
+  "geometric_features": {
+   "area": 6577,
+   "perimeter": 307.8477592468262,
+   "circularity": 0.872098846904321,
+   "aspect_ratio": 1.1797752808988764,
+   "solidity": 1.0028972247636474
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0067037_bbox1": {
+  "scene": "G0067037",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The feature lacks sharp edges and distinct shadows. The contrast between the feature and the road surface is primarily due to color variation, not depth, indicating a shallow surface depression or spalling.",
+  "geometric_features": {
+   "area": 17560,
+   "perimeter": 535.730008482933,
+   "circularity": 0.7688514330497951,
+   "aspect_ratio": 1.6611570247933884,
+   "solidity": 0.9998861177542421
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0088800_bbox0": {
+  "scene": "G0088800",
+  "bbox_id": 0,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole exhibits distinct shadows and sharp, broken edges, indicating a depth greater than a shallow surface depression. However, the bottom is not completely obscured in darkness, and some aggregate texture is visible, which makes a 'high' depth classification less likely. The low resolution of the image limits confidence.",
+  "geometric_features": {
+   "area": 6491,
+   "perimeter": 441.8477592468262,
+   "circularity": 0.41780743045390983,
+   "aspect_ratio": 2.923076923076923,
+   "solidity": 0.8998405766964719
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_left"
+  },
+  "used_dual_image": true
+ },
+ "G0088800_bbox1": {
+  "scene": "G0088800",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect exhibits very little shadow and low contrast between its interior and the surrounding road surface. The edges are not sharp, and the texture at the bottom is clearly visible, all of which are characteristic of a shallow surface depression.",
+  "geometric_features": {
+   "area": 26289,
+   "perimeter": 732.156415104866,
+   "circularity": 0.6162773216641055,
+   "aspect_ratio": 2.317829457364341,
+   "solidity": 0.9690546841882154
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0088800_bbox2": {
+  "scene": "G0088800",
+  "bbox_id": 2,
+  "depth_category": "medium",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The image shows a distinct shadow line along the upper edge of the defect, indicating a noticeable depression. The interior is darker than the surrounding surface, but not completely black, suggesting a moderate depth rather than a shallow scrape or a very deep hole. The low image quality reduces confidence.",
+  "geometric_features": {
+   "area": 10204,
+   "perimeter": 577.0609633922577,
+   "circularity": 0.3850675493574964,
+   "aspect_ratio": 1.6756756756756757,
+   "solidity": 0.7521745540321392
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0088800_bbox3": {
+  "scene": "G0088800",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The aggregate at the bottom of the pothole is clearly visible and well-illuminated. The shadows cast by the edges are not deep or dark, indicating a shallow depth consistent with surface layer erosion.",
+  "geometric_features": {
+   "area": 90172,
+   "perimeter": 1508.8052551746368,
+   "circularity": 0.49775449460461824,
+   "aspect_ratio": 1.3726541554959786,
+   "solidity": 0.8983825089791425
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_left"
+  },
+  "used_dual_image": false
+ },
+ "G0088800_bbox4": {
+  "scene": "G0088800",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect shows very little shadow and low contrast with the surrounding pavement. The edges are not sharp, and the interior texture is visible, all of which are characteristic of a shallow surface depression.",
+  "geometric_features": {
+   "area": 8380,
+   "perimeter": 444.0904002189636,
+   "circularity": 0.5339629357367286,
+   "aspect_ratio": 2.4210526315789473,
+   "solidity": 0.9543875633506065
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0088800_bbox5": {
+  "scene": "G0088800",
+  "bbox_id": 5,
+  "depth_category": "medium",
+  "depth_confidence": "low",
+  "depth_reasoning": "The interior of the feature is significantly darker than the surrounding road, indicating a shadow and therefore some depth. However, the extreme blurriness and low resolution of the cropped image make it impossible to assess edge sharpness or internal texture, leading to low confidence in the 'medium' depth assessment.",
+  "geometric_features": {
+   "area": 5929,
+   "perimeter": 444.37467217445374,
+   "circularity": 0.3773051377364605,
+   "aspect_ratio": 2.4473684210526314,
+   "solidity": 0.8701841931459602
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0088800_bbox6": {
+  "scene": "G0088800",
+  "bbox_id": 6,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely low resolution and blurry, which severely limits analysis. There are no sharp edges or distinct, dark shadows visible. The feature appears as a subtle, dark patch rather than a defined hole, suggesting a shallow surface depression.",
+  "geometric_features": {
+   "area": 5713,
+   "perimeter": 302.73506212234497,
+   "circularity": 0.783337003295156,
+   "aspect_ratio": 1.2289156626506024,
+   "solidity": 0.9801835806811358
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0088800_bbox7": {
+  "scene": "G0088800",
+  "bbox_id": 7,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely low resolution and blurry, making a confident assessment difficult. However, there is a visible lack of sharp, defined edges and no significant dark shadowing, which would be expected in a medium or high depth pothole under these bright lighting conditions. The contrast is minimal, suggesting a shallow surface depression.",
+  "geometric_features": {
+   "area": 1857,
+   "perimeter": 196.71067678928375,
+   "circularity": 0.6030674695940226,
+   "aspect_ratio": 2.3823529411764706,
+   "solidity": 1.0073230268510984
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_right"
+  },
+  "used_dual_image": true
+ },
+ "G0089835_bbox0": {
+  "scene": "G0089835",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The image shows very little shadow and low contrast between the interior of the depression and the surrounding road surface. The edges are not sharp or well-defined, which is characteristic of a shallow surface irregularity rather than a deep pothole.",
+  "geometric_features": {
+   "area": 13659,
+   "perimeter": 473.26197254657745,
+   "circularity": 0.7663471559559906,
+   "aspect_ratio": 1.4086956521739131,
+   "solidity": 0.9876712824035576
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0089835_bbox1": {
+  "scene": "G0089835",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect exhibits no significant shadows or dark areas. The interior surface is clearly visible and appears to be a lighter color than the surrounding pavement, indicating a very shallow depression or surface spalling rather than a deep pothole.",
+  "geometric_features": {
+   "area": 33370,
+   "perimeter": 765.2274831533432,
+   "circularity": 0.7161185968143667,
+   "aspect_ratio": 1.701219512195122,
+   "solidity": 0.9765733600620419
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0089835_bbox2": {
+  "scene": "G0089835",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image shows very low contrast between the defect area and the surrounding road surface. There are no discernible sharp edges or dark shadows that would indicate significant depth. The feature appears to be a shallow surface depression or delamination. Confidence is medium due to the low resolution and blurriness of the cropped image.",
+  "geometric_features": {
+   "area": 3263,
+   "perimeter": 224.85281217098236,
+   "circularity": 0.8110176219247317,
+   "aspect_ratio": 1.490566037735849,
+   "solidity": 1.0041544853054316
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_left"
+  },
+  "used_dual_image": true
+ },
+ "G0089835_bbox3": {
+  "scene": "G0089835",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits very weak and diffuse shadows, indicating a lack of significant depth. The edges are not sharp, and the texture of the pothole's bottom is clearly visible and well-illuminated, consistent with a shallow surface depression.",
+  "geometric_features": {
+   "area": 1232,
+   "perimeter": 141.8406196832657,
+   "circularity": 0.7695189726214681,
+   "aspect_ratio": 2.037037037037037,
+   "solidity": 1.027094622759483
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0089835_bbox4": {
+  "scene": "G0089835",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "Analysis of the full context image reveals minimal shadowing within the pothole despite bright daylight conditions. The interior surface color and texture are clearly visible and similar to the surrounding road, indicating a shallow depression with low contrast and no significant depth.",
+  "geometric_features": {
+   "area": 866,
+   "perimeter": 117.8406194448471,
+   "circularity": 0.7836781216375796,
+   "aspect_ratio": 1.6923076923076923,
+   "solidity": 1.027893175074184
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0089835_bbox5": {
+  "scene": "G0089835",
+  "bbox_id": 5,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The provided cropped image is extremely blurry and lacks the necessary detail to assess depth. There are no discernible shadows, sharp edges, or visible surface texture. The classification is based on the lack of any visual evidence suggesting significant depth in the full context image.",
+  "geometric_features": {
+   "area": 2763,
+   "perimeter": 215.09545254707336,
+   "circularity": 0.7504612826455244,
+   "aspect_ratio": 1.7826086956521738,
+   "solidity": 1.00729128691214
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_lane_far_left"
+  },
+  "used_dual_image": true
+ },
+ "G0089927_bbox0": {
+  "scene": "G0089927",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The cropped image displays extremely low contrast with the surrounding road surface. There are no discernible shadows or sharp edges, and the internal texture is visible. These cues strongly indicate a very shallow surface depression or discoloration rather than a pothole with any significant depth.",
+  "geometric_features": {
+   "area": 2273,
+   "perimeter": 196.61017203330994,
+   "circularity": 0.7389198499105682,
+   "aspect_ratio": 2.0,
+   "solidity": 1.0073122091734987
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0090220_bbox0": {
+  "scene": "G0090220",
+  "bbox_id": 0,
+  "depth_category": "high",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits very deep, dark shadows and high contrast between its interior and the surrounding road surface. The edges are sharp and well-defined, suggesting a significant vertical drop. Furthermore, vertical sub-surface structures, possibly rebar, are visible, indicating the damage has penetrated deep into the road base.",
+  "geometric_features": {
+   "area": 19241,
+   "perimeter": 647.4873688220978,
+   "circularity": 0.5767331333503728,
+   "aspect_ratio": 0.8870967741935484,
+   "solidity": 0.8558973332443673
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0090220_bbox1": {
+  "scene": "G0090220",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is very low resolution, but it shows poorly defined, soft edges with no discernible sharp shadows. The darkness appears uniform and related to surface texture rather than a deep cavity casting a shadow, which is indicative of a shallow surface depression.",
+  "geometric_features": {
+   "area": 7384,
+   "perimeter": 385.06096279621124,
+   "circularity": 0.6258100989563875,
+   "aspect_ratio": 1.8902439024390243,
+   "solidity": 0.9576551455807016
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0090220_bbox2": {
+  "scene": "G0090220",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is extremely blurry, but it lacks any discernible sharp edges or deep, dark shadows. The contrast between the feature and the surrounding road surface is minimal, suggesting a shallow surface depression rather than a significant pothole.",
+  "geometric_features": {
+   "area": 1431,
+   "perimeter": 186.6690467596054,
+   "circularity": 0.5160655614852835,
+   "aspect_ratio": 3.772727272727273,
+   "solidity": 1.0134560906515582
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0090222_bbox0": {
+  "scene": "G0090222",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect exhibits very shallow shadows and low contrast with the surrounding road surface. The edges are poorly defined and sloped rather than sharp and vertical. The texture of the aggregate at the bottom is clearly visible, indicating a lack of significant depth.",
+  "geometric_features": {
+   "area": 54860,
+   "perimeter": 1324.6315915584564,
+   "circularity": 0.3928940486215841,
+   "aspect_ratio": 2.460227272727273,
+   "solidity": 0.8863111297801186
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_left"
+  },
+  "used_dual_image": false
+ },
+ "G0090222_bbox1": {
+  "scene": "G0090222",
+  "bbox_id": 1,
+  "depth_category": "medium",
+  "depth_confidence": "high",
+  "depth_reasoning": "The pothole exhibits clear, dark shadows and well-defined vertical edges, indicating a depth greater than a shallow surface depression. The interior texture is partially obscured by shadow but still discernible, suggesting the depth is moderate and not severe enough to be classified as 'high'.",
+  "geometric_features": {
+   "area": 16150,
+   "perimeter": 752.256920337677,
+   "circularity": 0.3586328002963257,
+   "aspect_ratio": 2.1666666666666665,
+   "solidity": 0.7603936155186214
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": false
+ },
+ "G0090222_bbox2": {
+  "scene": "G0090222",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole exhibits very low contrast between its interior and the surrounding road surface. There are no deep or dark shadows present. The edges are crumbled and not sharply defined, and the texture of the aggregate at the bottom is visible, all of which are characteristic of a shallow depression. Confidence is medium due to the low resolution of the cropped image.",
+  "geometric_features": {
+   "area": 11837,
+   "perimeter": 498.27416574954987,
+   "circularity": 0.5991213142452865,
+   "aspect_ratio": 2.3411764705882354,
+   "solidity": 0.9338119280530136
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0090222_bbox3": {
+  "scene": "G0090222",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The defect exhibits very shallow shadows and low contrast between its interior and the surrounding road surface. The edges are not sharp, and the texture at the bottom is visible, suggesting a surface-level depression rather than a deep hole. The low resolution of the cropped image reduces confidence from high to medium.",
+  "geometric_features": {
+   "area": 4340,
+   "perimeter": 267.27921867370605,
+   "circularity": 0.7634299740745079,
+   "aspect_ratio": 1.6129032258064515,
+   "solidity": 1.0054442256457778
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0090222_bbox4": {
+  "scene": "G0090222",
+  "bbox_id": 4,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect shows very little shadow and low contrast with the surrounding pavement. The edges are not sharp, and the texture of the depression's bottom is clearly visible, indicating a shallow surface irregularity rather than a significant pothole.",
+  "geometric_features": {
+   "area": 17656,
+   "perimeter": 598.7838332653046,
+   "circularity": 0.6188167374897401,
+   "aspect_ratio": 1.5857142857142856,
+   "solidity": 0.9331184102740269
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0090386_bbox0": {
+  "scene": "G0090386",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The interior of the pothole is well-lit with no significant or dark shadows. The aggregate texture at the bottom is clearly visible, and the contrast between the pothole and the surrounding road surface is minimal, all of which are characteristic of a shallow surface depression.",
+  "geometric_features": {
+   "area": 20134,
+   "perimeter": 576.2152899503708,
+   "circularity": 0.7620270219742028,
+   "aspect_ratio": 1.7886178861788617,
+   "solidity": 0.9938789613979663
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0090386_bbox1": {
+  "scene": "G0090386",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The feature exhibits very low contrast with the surrounding pavement and lacks significant shadows, indicating minimal depth. The edges are indistinct and not sharp, which is consistent with a shallow surface depression rather than a deep pothole. The low resolution of the cropped image reduces confidence.",
+  "geometric_features": {
+   "area": 3200,
+   "perimeter": 237.92387986183167,
+   "circularity": 0.7103686316021208,
+   "aspect_ratio": 2.0434782608695654,
+   "solidity": 0.9944064636420137
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0090386_bbox2": {
+  "scene": "G0090386",
+  "bbox_id": 2,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The pothole exhibits low contrast between its interior and the surrounding road surface. The edges are not sharply defined, and there are no deep, dark shadows present, which is indicative of a shallow surface depression rather than a significant hole.",
+  "geometric_features": {
+   "area": 1872,
+   "perimeter": 195.8822499513626,
+   "circularity": 0.6130918470085358,
+   "aspect_ratio": 2.6774193548387095,
+   "solidity": 1.011891891891892
+  },
+  "positional_features": {
+   "Distance_Category": "Medium Distance",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0090386_bbox3": {
+  "scene": "G0090386",
+  "bbox_id": 3,
+  "depth_category": "low",
+  "depth_confidence": "low",
+  "depth_reasoning": "The cropped image is extremely blurry, making detailed analysis difficult. However, there is a lack of significant shadow or darkness within the pothole area. The contrast between the interior and the surrounding road surface is minimal, which is indicative of a shallow surface depression rather than a deep cavity.",
+  "geometric_features": {
+   "area": 918,
+   "perimeter": 131.74011421203613,
+   "circularity": 0.6646859119653283,
+   "aspect_ratio": 1.7241379310344827,
+   "solidity": 1.0138045278851464
+  },
+  "positional_features": {
+   "Distance_Category": "Far",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0114712_bbox0": {
+  "scene": "G0114712",
+  "bbox_id": 0,
+  "depth_category": "high",
+  "depth_confidence": "high",
+  "depth_reasoning": "The presence of a deep, dark shadow along a sharply defined upper edge indicates a significant vertical drop. The high contrast between the sunlit road surface and the shadowed interior is consistent with a pothole of high depth.",
+  "geometric_features": {
+   "area": 6215,
+   "perimeter": 299.5634888410568,
+   "circularity": 0.8703085240823747,
+   "aspect_ratio": 0.9368421052631579,
+   "solidity": 1.0074566380288539
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": false
+ },
+ "G0114712_bbox1": {
+  "scene": "G0114712",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The visual evidence indicates a shallow depression. There is a lack of significant shadow or darkness within the pothole, and the contrast with the surrounding road surface is minimal despite the bright, direct sunlight. The edges are not sharp or well-defined, suggesting a worn, shallow feature rather than a deep cavity.",
+  "geometric_features": {
+   "area": 3252,
+   "perimeter": 273.5807341337204,
+   "circularity": 0.545995897749215,
+   "aspect_ratio": 2.4444444444444446,
+   "solidity": 0.9707462686567164
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_right"
+  },
+  "used_dual_image": true
+ },
+ "G0114733_bbox0": {
+  "scene": "G0114733",
+  "bbox_id": 0,
+  "depth_category": "low",
+  "depth_confidence": "high",
+  "depth_reasoning": "The defect shows very low contrast with the surrounding road surface. There are no deep or dark shadows cast within the depression, and the edges are soft and undefined, which is characteristic of a shallow surface wear pattern rather than a pothole with significant depth.",
+  "geometric_features": {
+   "area": 4080,
+   "perimeter": 286.55129647254944,
+   "circularity": 0.6244034179083602,
+   "aspect_ratio": 2.38,
+   "solidity": 1.0086526576019776
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_path_left"
+  },
+  "used_dual_image": true
+ },
+ "G0114733_bbox1": {
+  "scene": "G0114733",
+  "bbox_id": 1,
+  "depth_category": "low",
+  "depth_confidence": "medium",
+  "depth_reasoning": "The cropped image is very blurry, but it lacks the sharp, defined edges and deep, high-contrast shadows that would indicate significant depth. The visual evidence suggests a shallow surface depression rather than a distinct hole.",
+  "geometric_features": {
+   "area": 1385,
+   "perimeter": 148.42640614509583,
+   "circularity": 0.7900185583746162,
+   "aspect_ratio": 1.2972972972972974,
+   "solidity": 1.0150238182484426
+  },
+  "positional_features": {
+   "Distance_Category": "Near",
+   "Lateral_Position": "in_lane_far_left"
+  },
+  "used_dual_image": true
+ }
+}

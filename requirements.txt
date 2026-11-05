@@ -1,0 +1,20 @@
+# Environment for the pipeline and the analyses in this repository.
+numpy>=1.24
+opencv-python-headless>=4.8
+Pillow>=10.0
+scikit-learn>=1.3
+scipy>=1.10
+pandas>=2.0
+matplotlib>=3.7
+tqdm>=4.65
+openpyxl>=3.1
+odfpy>=1.4
+
+# Stage 2: SAM ViT-H
+torch>=2.1
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git
+
+# Stages 4-5: Gemini 2.5 Pro (and the GPT-5 / Gemini Flash comparison arms)
+google-generativeai>=0.7
+openai>=1.30
+python-dotenv>=1.0

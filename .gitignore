@@ -1,0 +1,38 @@
+# Model weights / checkpoints — never commit; use scripts/download_models.sh
+*.pth
+*.pt
+*.safetensors
+*.onnx
+*.gguf
+checkpoints/
+weights/
+ckpt/
+
+# Third-party clones (reproducible via scripts/setup_third_party.sh)
+third_party/
+
+# Full dataset (only data/sample/ is committed; see data/README.md)
+data/enpad_images/
+data/full/
+
+# Pipeline outputs — regenerable
+results/
+outputs/
+# ...except the results reported in Paper 1, which are released deliberately
+!paper1_pipeline/revision_analyses/results/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# LaTeX / editor noise
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+.DS_Store

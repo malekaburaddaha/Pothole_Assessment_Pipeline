@@ -1,0 +1,370 @@
+{
+ "M7a_stuart_maxwell": {
+  "n_scenes": 1119,
+  "chi2": 260.14,
+  "df": 3,
+  "p_value": 4.1920396142329845e-56,
+  "note": "marginal homogeneity rejected -> the two methods' urgency distributions differ, correctly tested as PAIRED data",
+  "exact_agreement": 0.4459
+ },
+ "M7b_clustered_ratings": {
+  "n_rows": 150,
+  "answer_key_used": true,
+  "clarity": {
+   "mean_diff_hybrid_minus_imageonly": 0.827,
+   "per_annotator": [
+    {
+     "annotator": 1,
+     "mean_diff": 0.86,
+     "wilcoxon_p": 1.0119256007297702e-05,
+     "n": 50
+    },
+    {
+     "annotator": 2,
+     "mean_diff": 0.8,
+     "wilcoxon_p": 7.881828660059393e-05,
+     "n": 50
+    },
+    {
+     "annotator": 3,
+     "mean_diff": 0.82,
+     "wilcoxon_p": 1.446646431012018e-05,
+     "n": 50
+    }
+   ],
+   "scene_level_wilcoxon": {
+    "n_scenes": 50,
+    "stat": 60.5,
+    "p": 6.5998291417252335e-06
+   },
+   "scene_clustered_bootstrap_CI95": [
+    0.54,
+    1.107
+   ]
+  },
+  "safety": {
+   "mean_diff_hybrid_minus_imageonly": 0.727,
+   "per_annotator": [
+    {
+     "annotator": 1,
+     "mean_diff": 0.66,
+     "wilcoxon_p": 0.002292376634210915,
+     "n": 50
+    },
+    {
+     "annotator": 2,
+     "mean_diff": 0.8,
+     "wilcoxon_p": 0.0014009949682029154,
+     "n": 50
+    },
+    {
+     "annotator": 3,
+     "mean_diff": 0.72,
+     "wilcoxon_p": 0.0012440059956825593,
+     "n": 50
+    }
+   ],
+   "scene_level_wilcoxon": {
+    "n_scenes": 50,
+    "stat": 232.0,
+    "p": 0.0007242632257948163
+   },
+   "scene_clustered_bootstrap_CI95": [
+    0.36,
+    1.107
+   ]
+  }
+ },
+ "M6_sensitivity": {
+  "n_potholes": 3092,
+  "weight_perturbations": [
+   {
+    "weights": [
+     0.4,
+     0.2,
+     0.4
+    ],
+    "pct_category_change": 43.76
+   },
+   {
+    "weights": [
+     0.4,
+     0.3,
+     0.3
+    ],
+    "pct_category_change": 26.39
+   },
+   {
+    "weights": [
+     0.4,
+     0.4,
+     0.2
+    ],
+    "pct_category_change": 15.88
+   },
+   {
+    "weights": [
+     0.5,
+     0.2,
+     0.3
+    ],
+    "pct_category_change": 9.51
+   },
+   {
+    "weights": [
+     0.5,
+     0.4,
+     0.1
+    ],
+    "pct_category_change": 19.18
+   },
+   {
+    "weights": [
+     0.6,
+     0.2,
+     0.2
+    ],
+    "pct_category_change": 12.9
+   },
+   {
+    "weights": [
+     0.6,
+     0.3,
+     0.1
+    ],
+    "pct_category_change": 35.48
+   }
+  ],
+  "boundary_shifts": [
+   {
+    "boundary_shift": -5,
+    "pct_category_change": 19.63
+   },
+   {
+    "boundary_shift": 5,
+    "pct_category_change": 25.45
+   }
+  ],
+  "median_weight_flip_pct": 19.18
+ },
+ "M2_depth_stats_38set": {
+  "n": 38,
+  "consensus_dist": {
+   "medium": 15,
+   "low": 13,
+   "high": 10
+  },
+  "models": {
+   "gemini_pro": {
+    "quadratic_weighted_kappa": 0.5412,
+    "qwk_bootstrap_CI95": [
+     0.276,
+     0.772
+    ],
+    "unweighted_kappa": 0.4795,
+    "per_class": {
+     "low": {
+      "precision": 0.65,
+      "recall": 1.0,
+      "support": 13
+     },
+     "medium": {
+      "precision": 0.727,
+      "recall": 0.533,
+      "support": 15
+     },
+     "high": {
+      "precision": 0.571,
+      "recall": 0.4,
+      "support": 10
+     }
+    },
+    "confusion_true_rows": [
+     [
+      13,
+      0,
+      0
+     ],
+     [
+      4,
+      8,
+      3
+     ],
+     [
+      3,
+      3,
+      4
+     ]
+    ]
+   },
+   "gemini_flash": {
+    "quadratic_weighted_kappa": 0.3153,
+    "qwk_bootstrap_CI95": [
+     0.029,
+     0.577
+    ],
+    "unweighted_kappa": 0.2237,
+    "per_class": {
+     "low": {
+      "precision": 0.692,
+      "recall": 0.692,
+      "support": 13
+     },
+     "medium": {
+      "precision": 0.474,
+      "recall": 0.6,
+      "support": 15
+     },
+     "high": {
+      "precision": 0.167,
+      "recall": 0.1,
+      "support": 10
+     }
+    },
+    "confusion_true_rows": [
+     [
+      9,
+      3,
+      1
+     ],
+     [
+      2,
+      9,
+      4
+     ],
+     [
+      2,
+      7,
+      1
+     ]
+    ]
+   },
+   "gpt5": {
+    "quadratic_weighted_kappa": 0.0632,
+    "qwk_bootstrap_CI95": [
+     -0.018,
+     0.212
+    ],
+    "unweighted_kappa": 0.2286,
+    "per_class": {
+     "low": {
+      "precision": 0.419,
+      "recall": 1.0,
+      "support": 13
+     },
+     "medium": {
+      "precision": 0.857,
+      "recall": 0.4,
+      "support": 15
+     },
+     "high": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 10
+     }
+    },
+    "confusion_true_rows": [
+     [
+      13,
+      0,
+      0
+     ],
+     [
+      9,
+      6,
+      0
+     ],
+     [
+      9,
+      1,
+      0
+     ]
+    ]
+   }
+  }
+ },
+ "M6_rank_stability": {
+  "note": "Ranking stability under weight perturbation: category flips are an artifact of fixed band boundaries on a continuous score; the ordering of potholes is essentially unchanged.",
+  "min_spearman_rho": 0.9542,
+  "all_flips_adjacent_band": true,
+  "grid": [
+   {
+    "weights": [
+     0.4,
+     0.2,
+     0.4
+    ],
+    "spearman_rho": 0.9542,
+    "pct_flips": 43.76,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   },
+   {
+    "weights": [
+     0.4,
+     0.3,
+     0.3
+    ],
+    "spearman_rho": 0.9916,
+    "pct_flips": 26.39,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   },
+   {
+    "weights": [
+     0.4,
+     0.4,
+     0.2
+    ],
+    "spearman_rho": 0.9915,
+    "pct_flips": 15.88,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   },
+   {
+    "weights": [
+     0.5,
+     0.2,
+     0.3
+    ],
+    "spearman_rho": 0.9741,
+    "pct_flips": 9.51,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   },
+   {
+    "weights": [
+     0.5,
+     0.4,
+     0.1
+    ],
+    "spearman_rho": 0.9866,
+    "pct_flips": 19.18,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   },
+   {
+    "weights": [
+     0.6,
+     0.2,
+     0.2
+    ],
+    "spearman_rho": 0.9937,
+    "pct_flips": 12.9,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   },
+   {
+    "weights": [
+     0.6,
+     0.3,
+     0.1
+    ],
+    "spearman_rho": 0.9922,
+    "pct_flips": 35.48,
+    "max_band_jump": 1,
+    "pct_nonadjacent_flips": 0.0
+   }
+  ]
+ }
+}
