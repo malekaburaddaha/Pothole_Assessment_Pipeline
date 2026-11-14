@@ -80,7 +80,7 @@ From the repository root, on the bundled 30-scene sample:
 ```bash
 conda activate paper2
 bash scripts/download_models.sh            # SAM ViT-H and the six severity models into checkpoints/
-python paper2_pipeline/pipeline/paper2_pipeline.py --limit 30 --out results/sample_assessments.json
+python paper2_pipeline/pipeline/paper2_pipeline.py --limit 30 --out sample_assessments.json   # written to results/
 ```
 
 The six distilled severity models (`distill_convnext_tiny_{image,twotower}_s{42,43,44}.pt`,

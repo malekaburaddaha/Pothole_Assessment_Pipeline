@@ -284,7 +284,8 @@ def main():
     result = {"config": {"stage2": "vith fp16+compile", "stage4": "distilled 6-ensemble",
                          "risk": "paper1 production formula"},
               "timing_per_scene": timing, "scenes": out}
-    out_path = P2 / "results" / args.out
+    out_path = P2 / "results" / args.out       # a relative --out lands in results/
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(result, indent=1))
     print(json.dumps(timing, indent=1))
     print(f"Saved: {out_path}")
