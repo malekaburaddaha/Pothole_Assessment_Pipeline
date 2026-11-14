@@ -12,14 +12,18 @@ echo "==> YOLO11m (Paper 1 detection stage)"
 [ -f "$CKPT/yolo11m.pt" ] || curl -L -o "$CKPT/yolo11m.pt" \
   https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m.pt
 
+echo "==> Six distilled ConvNeXt-Tiny severity models (6 x 112 MB) — Paper 2, Stage 4"
+REL=https://github.com/malekaburaddaha/Pothole_Assessment_Pipeline/releases/download/v2.0-paper2
+mkdir -p "$CKPT/distilled_severity"
+for v in image twotower; do for s in 42 43 44; do
+  f="distill_convnext_tiny_${v}_s${s}.pt"
+  [ -f "$CKPT/distilled_severity/$f" ] || curl -fL -o "$CKPT/distilled_severity/$f" "$REL/$f"
+done; done
+(cd "$CKPT/distilled_severity" && curl -fsL "$REL/SHA256SUMS" | sha256sum -c -)
+
 cat <<'NOTE'
 
-Local VLM (Paper 2, Stages 4-5) is pulled from the HuggingFace Hub on first use:
+Local VLM (Paper 2, Stage 5) is pulled from the HuggingFace Hub on first use:
     Qwen/Qwen3-VL-8B-Instruct
 Set HF_HOME to a disk with ~20 GB free before the first run.
-
-The six distilled ConvNeXt-Tiny severity checkpoints (6 x 112 MB, too large for git) go in
-    $CKPT/distilled_severity/distill_convnext_tiny_{image,twotower}_s{42,43,44}.pt
-They are trained by paper2_pipeline/stage4_5_local_vlm/train_depth_distilled.py on the
-full ENPAD-A corpus (see data/README.md), or are available from the corresponding author.
 NOTE

@@ -79,11 +79,16 @@ From the repository root, on the bundled 30-scene sample:
 
 ```bash
 conda activate paper2
-bash scripts/download_models.sh            # SAM ViT-H into checkpoints/
-# the six severity students go in checkpoints/distilled_severity/:
-#   distill_convnext_tiny_{image,twotower}_s{42,43,44}.pt
+bash scripts/download_models.sh            # SAM ViT-H and the six severity models into checkpoints/
 python paper2_pipeline/pipeline/paper2_pipeline.py --limit 30 --out results/sample_assessments.json
 ```
+
+The six distilled severity models (`distill_convnext_tiny_{image,twotower}_s{42,43,44}.pt`,
+112 MB each, too large for git) are attached to the
+[v2.0-paper2 release](https://github.com/malekaburaddaha/Pothole_Assessment_Pipeline/releases/tag/v2.0-paper2); the download script fetches them into
+`checkpoints/distilled_severity/` and checks them against the release's `SHA256SUMS`.
+They can also be retrained with `stage4_5_local_vlm/train_depth_distilled.py` on the full
+corpus.
 
 The first scenes pay the `torch.compile` warm-up, so the per-scene time on a short run
 is well above the 1.27 s measured over the full corpus.
