@@ -2,7 +2,10 @@
 
 Code, data and analyses for the paper by Abdalmalek Aburaddaha, Zaid A. El Shair,
 Ali Al-Bustami and Samir A. Rawashdeh (Department of Electrical and Computer
-Engineering, University of Michigan–Dearborn), under review at *IEEE Access*.
+Engineering, University of Michigan–Dearborn), under review at *IEEE Access*
+([arXiv:2611.16061](https://arxiv.org/abs/2611.16061)), and for its follow-up, a fully
+local version of the same pipeline (Aburaddaha and Rawashdeh, submitted to *Sensors*;
+see [Paper 2](#paper-2-fully-local-pipeline) below).
 
 The framework is an offline, five-stage pipeline that assesses already-detected
 potholes in dashcam images:
@@ -38,12 +41,13 @@ paper1_pipeline/
 ├── vlm/                       Stages 4-5: Gemini clients, risk scoring, warning generation,
 │                              the published prompts, and the original analyses
 └── revision_analyses/         every analysis added in the revision, with its results
+paper2_pipeline/               Paper 2: the fully local pipeline, benchmarks and analyses
 data/
 ├── sample/                    30 scenes with boxes and Stage 4 labels (runs out of the box)
 ├── enpad/                     complete pipeline outputs for all scenes (no images)
 └── human_studies/             anonymized human annotations and ratings
 docs/figures/                  figures used in this README
-scripts/download_models.sh     SAM ViT-H weights
+scripts/download_models.sh     SAM ViT-H and YOLO11m weights
 repo_config.py                 path resolution (set POTHOLE_DATA_ROOT for the full corpus)
 ```
 
@@ -79,6 +83,21 @@ The full 1,119-scene run took 8.2 h of wall-clock time and cost about $117.50 in
 fees ($0.105 per scene). The complete outputs are in `data/enpad/`, so no analysis
 needs a re-run: hosted models are not guaranteed to reproduce their earlier outputs.
 
+## Paper 2: fully local pipeline
+
+[`paper2_pipeline/`](paper2_pipeline/) rebuilds every stage to run on one local GPU with
+the same data, prompts and protocol: the original SAM ViT-H in fp16 with `torch.compile`
+(2.7× faster, no change in any risk class), six ConvNeXt-Tiny students distilled from the
+3,092 cloud severity labels (κ 0.268 against the human panel, against 0.321 for the cloud
+model), and Qwen3-VL-8B writing the warnings under a grammar that allows only in-lane
+maneuvers. The full pipeline takes 1.27 s per scene, offline, at no per-scene cost.
+Three blind raters scored the local warnings safer than the cloud warnings (4.18 vs 3.65
+of 5, p = 0.001, 50 scenes) and equally clear, while an automated LLM judge ranked them
+the other way. Details, environments and commands are in
+[`paper2_pipeline/README.md`](paper2_pipeline/README.md).
+
+![Paper 2 pipeline](docs/figures/paper2_pipeline_overview.png)
+
 ## Data
 
 See [`data/README.md`](data/README.md). The images come from the public dataset of
@@ -92,12 +111,21 @@ human-study data are released under CC BY 4.0 (`DATA_LICENSE.md`).
 ## Citation
 
 ```bibtex
-@article{aburaddaha_pothole_vlm,
+@article{aburaddaha2026pothole,
   author  = {Aburaddaha, Abdalmalek and El Shair, Zaid A. and Al-Bustami, Ali and Rawashdeh, Samir A.},
   title   = {Pothole Risk Assessment with Geometrically Grounded Vision Language Models},
-  journal = {IEEE Access},
-  note    = {under review},
-  year    = {2026}
+  journal = {arXiv preprint arXiv:2611.16061},
+  note    = {Submitted to IEEE Access},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2611.16061}
+}
+
+@misc{aburaddaha2026cloudedge,
+  author       = {Aburaddaha, Abdalmalek and Rawashdeh, Samir A.},
+  title        = {From Cloud to Edge: A Fully Local Pipeline for Pothole Risk Assessment and Driver Warning Generation},
+  howpublished = {Preprint},
+  note         = {Submitted to Sensors},
+  year         = {2026}
 }
 ```
 
